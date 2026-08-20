@@ -97,4 +97,7 @@ Azul-marinho e bordô, conclusões sustentadas, cards contidos e limitações ex
 ## Limites
 
 Volume não é taxa; a base não representa todos os clientes; nomes não implicam irregularidade; relatos não são fatos verificados; regras textuais não estabelecem causalidade; e compensação não mede perda, justiça ou qualidade de solução.
+# Interação principal: Gráfico de Controle de Sinais
+
+Use pontos acima do limite de atenção como gatilhos de investigação e depois compare prazo de resposta e contexto equivalente de produto, empresa, estado e período. O gráfico de controle é uma ferramenta de triagem, não prova de que uma organização causou a mudança.
 

@@ -31,14 +31,14 @@ export function MetricCard({ metric, lang, prior }: { metric: Metric; lang: Lang
 
 export function TrendChart({ data, lang }: { data: SeriesPoint[]; lang: Lang }) {
   const option = { animationDuration: 450, grid: { left: 12, right: 22, top: 24, bottom: 18, containLabel: true }, tooltip: { trigger: 'axis', valueFormatter: (v: number) => new Intl.NumberFormat(lang === 'pt' ? 'pt-BR' : 'en-US').format(v) }, xAxis: { type: 'category', data: data.map(d => d.label), boundaryGap: false, axisLine: { lineStyle: { color: '#d9e2ef' } }, axisLabel: { color: '#697386' } }, yAxis: { type: 'value', splitLine: { lineStyle: { color: '#edf1f7' } }, axisLabel: { color: '#697386' } }, series: [{ type: 'line', data: data.map(d => d.value), smooth: .25, symbolSize: 6, lineStyle: { width: 3, color: '#625bf6' }, itemStyle: { color: '#625bf6' }, areaStyle: { color: 'rgba(98,91,246,.10)' } }] }
-  return <ReactEChartsCore echarts={echarts} option={option} style={{ height: 280 }} />
+  return <div className="chart-viewport"><ReactEChartsCore echarts={echarts} option={option} style={{height:300,width:'100%'}} /></div>
 }
 
 export function BarChart({ data, lang }: { data: BreakdownRow[]; lang: Lang }) {
   const sorted = [...data].sort((a,b) => a.value - b.value).slice(-8)
   const compact = (value: number) => new Intl.NumberFormat(lang === 'pt' ? 'pt-BR' : 'en-US', { notation: 'compact', maximumFractionDigits: 1 }).format(value)
   const option = { animationDuration: 450, grid: { left: 12, right: 52, top: 12, bottom: 12, containLabel: true }, tooltip: { trigger: 'axis', axisPointer: { type: 'shadow' } }, xAxis: { type: 'value', splitNumber: 4, splitLine: { lineStyle: { color: '#edf1f7' } }, axisLabel: { color: '#697386', formatter: compact } }, yAxis: { type: 'category', data: sorted.map(d => d.name), axisLine: { show: false }, axisTick: { show: false }, axisLabel: { color: '#27364b', width: 120, overflow: 'truncate' } }, series: [{ type: 'bar', data: sorted.map(d => d.value), barWidth: 12, itemStyle: { color: '#1f6feb', borderRadius: [0, 4, 4, 0] }, label: { show: true, position: 'right', color: '#415269', formatter: (p: { value: number }) => compact(p.value) } }] }
-  return <ReactEChartsCore echarts={echarts} option={option} style={{ height: 280 }} />
+  return <div className="chart-viewport"><ReactEChartsCore echarts={echarts} option={option} style={{height:300,width:'100%'}} /></div>
 }
 
 export function DataGrid({ rows }: { rows: Record<string, string | number>[] }) {

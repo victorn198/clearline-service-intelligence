@@ -113,4 +113,7 @@ The navy and burgundy palette, evidence statements, restrained cards, and explic
 - Narratives are consumer accounts, not independently verified facts.
 - Topic rules support triage and do not establish causality or regulatory findings.
 - Monetary relief share does not measure loss, fairness, or resolution quality.
+# Signature interaction: Signal Detection Control Chart
+
+Use points above the attention limit as investigation prompts, then compare response timeliness and like-for-like product, company, state, and period context. The control chart is a triage device, not proof that an organization caused a change.
 

@@ -33,3 +33,6 @@ npm run dev
 ```
 
 O case demonstra governança de evidências, métricas de resposta, análise textual interpretável, interface bilíngue e limitações explícitas. [Contato](mailto:comercial@wickoai.com.br).
+# Inovação de design
+
+O **Gráfico de Controle de Sinais** separa variação esperada de dias acima de um limite estatístico de atenção. Ele apoia triagem sem apresentar volume de reclamações como causalidade, prevalência ou nota de qualidade da empresa.
