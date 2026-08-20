@@ -1,0 +1,13 @@
+version: 2
+models:
+  - name: mart_response_performance
+    description: Operational response metrics at company and product grain.
+    columns:
+      - name: company
+        tests: [not_null]
+      - name: product
+        tests: [not_null]
+      - name: complaints
+        tests: [not_null]
+      - name: timely_rate
+        tests: [not_null]

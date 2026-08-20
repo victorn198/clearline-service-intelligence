@@ -1,0 +1,8 @@
+name: clearline
+version: 1.0.0
+config-version: 2
+profile: clearline
+model-paths: ["models"]
+models:
+  clearline:
+    +materialized: table

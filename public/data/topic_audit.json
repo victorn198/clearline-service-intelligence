@@ -1,0 +1,43 @@
+{
+  "method": "explainable_keyword_rules",
+  "sample_rows": 50000,
+  "rules": {
+    "Identity & fraud": [
+      "identity",
+      "fraud",
+      "not mine",
+      "unauthorized"
+    ],
+    "Credit reporting accuracy": [
+      "credit report",
+      "incorrect information",
+      "score"
+    ],
+    "Payments & fees": [
+      "payment",
+      "fee",
+      "interest",
+      "charge"
+    ],
+    "Debt collection": [
+      "collection",
+      "collector",
+      "debt"
+    ],
+    "Account access": [
+      "close",
+      "cancel",
+      "access",
+      "blocked"
+    ]
+  },
+  "distribution": {
+    "Credit reporting accuracy": 23642,
+    "Other service issues": 17486,
+    "Identity & fraud": 5254,
+    "Debt collection": 1775,
+    "Payments & fees": 1628,
+    "Account access": 215
+  },
+  "limitation": "Topics support triage and do not establish truth, causality, or regulatory findings."
+}

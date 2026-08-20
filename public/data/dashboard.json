@@ -1,0 +1,2449 @@
+{
+  "meta": {
+    "source": "CFPB Consumer Complaint Database · CC0",
+    "period": "2025-01-01 — 2025-01-07",
+    "builtAt": "2026-08-19",
+    "rows": 74076,
+    "limitations": {
+      "en": "Complaint volume is not a rate and cannot measure company quality without customer or transaction exposure. Published narratives are consumer accounts scrubbed by CFPB.",
+      "pt": "Volume de reclamações não é taxa e não mede qualidade sem exposição de clientes ou transações. Relatos publicados são versões dos consumidores tratadas pelo CFPB."
+    }
+  },
+  "filters": {
+    "channels": [
+      "Checking or savings account",
+      "Credit card",
+      "Credit reporting or other personal consumer reports",
+      "Debt collection",
+      "Debt or credit management",
+      "Money transfer, virtual currency, or money service",
+      "Mortgage",
+      "Payday loan, title loan, personal loan, or advance loan",
+      "Prepaid card",
+      "Student loan",
+      "Vehicle loan or lease"
+    ],
+    "devices": [
+      "TRANSUNION INTERMEDIATE HOLDINGS, INC.",
+      "Experian Information Solutions Inc.",
+      "EQUIFAX, INC.",
+      "CAPITAL ONE FINANCIAL CORPORATION",
+      "Resurgent Capital Services L.P.",
+      "JPMORGAN CHASE & CO.",
+      "CITIBANK, N.A.",
+      "WELLS FARGO & COMPANY",
+      "BANK OF AMERICA, NATIONAL ASSOCIATION",
+      "CBC Companies, Inc.",
+      "CL Holdings LLC",
+      "Portfolio Recovery Associates, LLC",
+      "MOHELA",
+      "ENCORE CAPITAL GROUP INC.",
+      "AMERICAN EXPRESS COMPANY",
+      "SYNCHRONY FINANCIAL",
+      "LEXISNEXIS",
+      "NAVY FEDERAL CREDIT UNION",
+      "John C. Heath, Attorney at Law, PLLC",
+      "DISCOVER BANK",
+      "Bread Financial Holdings, Inc.",
+      "CCS Financial Services, Inc.",
+      "TRUIST FINANCIAL CORPORATION",
+      "Early Warning Services, LLC",
+      "TD BANK US HOLDING COMPANY",
+      "U.S. BANCORP",
+      "I.C. System, Inc.",
+      "National Credit Systems,Inc.",
+      "TRANSWORLD SYSTEMS INC",
+      "Fidelity National Information Services, Inc. (FNIS)",
+      "Block, Inc.",
+      "SANTANDER HOLDINGS USA, INC.",
+      "ALLY FINANCIAL INC.",
+      "GOLDMAN SACHS BANK USA",
+      "Paypal Holdings, Inc",
+      "Affirm Holdings, Inc",
+      "Shellpoint Partners, LLC",
+      "Kriya Capital, LLC",
+      "Chime Financial Inc",
+      "BARCLAYS BANK DELAWARE",
+      "CREDIT ACCEPTANCE CORPORATION",
+      "OneMain Finance Corporation",
+      "Westlake Services, LLC",
+      "Servicer under contract with Federal Student Aid",
+      "CAINE & WEINER COMPANY, INC.",
+      "National Credit Adjusters, LLC",
+      "ROBINHOOD MARKETS INC.",
+      "Spring Oaks Capital, LLC",
+      "Self Financial Inc.",
+      "Nelnet, Inc."
+    ],
+    "countries": [
+      "AE",
+      "AK",
+      "AL",
+      "AP",
+      "AR",
+      "AZ",
+      "CA",
+      "CO",
+      "CT",
+      "DC",
+      "DE",
+      "FL",
+      "GA",
+      "HI",
+      "IA",
+      "ID",
+      "IL",
+      "IN",
+      "KS",
+      "KY",
+      "LA",
+      "MA",
+      "MD",
+      "ME",
+      "MI",
+      "MN",
+      "MO",
+      "MS",
+      "MT",
+      "NC",
+      "ND",
+      "NE",
+      "NH",
+      "NJ",
+      "NM",
+      "NV",
+      "NY",
+      "None",
+      "OH",
+      "OK",
+      "OR",
+      "PA",
+      "PR",
+      "RI",
+      "SC",
+      "SD",
+      "TN",
+      "TX",
+      "UNITED STATES MINOR OUTLYING ISLANDS",
+      "UT",
+      "VA",
+      "VI",
+      "VT",
+      "WA",
+      "WI",
+      "WV",
+      "WY"
+    ]
+  },
+  "pages": [
+    {
+      "id": "service",
+      "title": {
+        "en": "Service Command",
+        "pt": "Comando de Atendimento"
+      },
+      "eyebrow": {
+        "en": "Operational overview",
+        "pt": "Visão operacional"
+      },
+      "question": {
+        "en": "Which service issues require operational attention now?",
+        "pt": "Quais problemas de atendimento exigem atenção operacional agora?"
+      },
+      "metrics": [
+        {
+          "id": "complaints",
+          "label": {
+            "en": "Complaints received",
+            "pt": "Reclamações recebidas"
+          },
+          "value": 74076,
+          "previous": 36158.0,
+          "format": "integer",
+          "improvement": "down"
+        },
+        {
+          "id": "timely",
+          "label": {
+            "en": "Timely response",
+            "pt": "Resposta no prazo"
+          },
+          "value": 0.9956801123170798,
+          "previous": 0.985723311193909,
+          "format": "percent",
+          "improvement": "up"
+        },
+        {
+          "id": "companies",
+          "label": {
+            "en": "Companies represented",
+            "pt": "Empresas representadas"
+          },
+          "value": 904.0,
+          "previous": 904.0,
+          "format": "integer",
+          "improvement": "up"
+        },
+        {
+          "id": "narratives",
+          "label": {
+            "en": "Narrative coverage",
+            "pt": "Cobertura de relatos"
+          },
+          "value": 0.27444786435552676,
+          "previous": 0.26895890706841624,
+          "format": "percent",
+          "improvement": "up"
+        },
+        {
+          "id": "relief",
+          "label": {
+            "en": "Monetary relief share",
+            "pt": "Parcela com compensação"
+          },
+          "value": 0.4738511798693234,
+          "previous": 0.45015862087585723,
+          "format": "percent",
+          "improvement": "up"
+        }
+      ],
+      "trendTitle": {
+        "en": "Complaint intake",
+        "pt": "Entrada de reclamações"
+      },
+      "trend": [
+        {
+          "label": "Jan 01",
+          "value": 5453,
+          "secondary": 99.7
+        },
+        {
+          "label": "Jan 02",
+          "value": 12964,
+          "secondary": 99.7
+        },
+        {
+          "label": "Jan 03",
+          "value": 14121,
+          "secondary": 99.7
+        },
+        {
+          "label": "Jan 04",
+          "value": 7528,
+          "secondary": 99.0
+        },
+        {
+          "label": "Jan 05",
+          "value": 5757,
+          "secondary": 99.0
+        },
+        {
+          "label": "Jan 06",
+          "value": 13460,
+          "secondary": 99.7
+        },
+        {
+          "label": "Jan 07",
+          "value": 14793,
+          "secondary": 99.7
+        }
+      ],
+      "breakdownTitle": {
+        "en": "Product mix",
+        "pt": "Mix de produtos"
+      },
+      "breakdown": [
+        {
+          "name": "Credit reporting or other personal consumer reports",
+          "value": 64786,
+          "timely_pct": 99.9
+        },
+        {
+          "name": "Debt collection",
+          "value": 4369,
+          "timely_pct": 97.4
+        },
+        {
+          "name": "Credit card",
+          "value": 1638,
+          "timely_pct": 99.8
+        },
+        {
+          "name": "Checking or savings account",
+          "value": 1142,
+          "timely_pct": 99.6
+        },
+        {
+          "name": "Mortgage",
+          "value": 455,
+          "timely_pct": 99.1
+        },
+        {
+          "name": "Student loan",
+          "value": 413,
+          "timely_pct": 87.2
+        },
+        {
+          "name": "Money transfer, virtual currency, or money service",
+          "value": 390,
+          "timely_pct": 96.7
+        },
+        {
+          "name": "Vehicle loan or lease",
+          "value": 365,
+          "timely_pct": 98.9
+        },
+        {
+          "name": "Payday loan, title loan, personal loan, or advance loan",
+          "value": 198,
+          "timely_pct": 98.0
+        },
+        {
+          "name": "Prepaid card",
+          "value": 167,
+          "timely_pct": 92.2
+        },
+        {
+          "name": "Debt or credit management",
+          "value": 153,
+          "timely_pct": 77.8
+        }
+      ],
+      "detailTitle": {
+        "en": "Priority issue queue",
+        "pt": "Fila de problemas prioritários"
+      },
+      "detail": [
+        {
+          "product": "Credit reporting or other personal consumer reports",
+          "issue": "Incorrect information on your report",
+          "complaints": 36323,
+          "timely_pct": 99.9,
+          "narratives": 8759
+        },
+        {
+          "product": "Credit reporting or other personal consumer reports",
+          "issue": "Improper use of your report",
+          "complaints": 17408,
+          "timely_pct": 99.9,
+          "narratives": 4502
+        },
+        {
+          "product": "Credit reporting or other personal consumer reports",
+          "issue": "Problem with a company's investigation into an existing problem",
+          "complaints": 10454,
+          "timely_pct": 99.9,
+          "narratives": 2670
+        },
+        {
+          "product": "Debt collection",
+          "issue": "Attempts to collect debt not owed",
+          "complaints": 1978,
+          "timely_pct": 97.5,
+          "narratives": 720
+        },
+        {
+          "product": "Debt collection",
+          "issue": "Written notification about debt",
+          "complaints": 1025,
+          "timely_pct": 98.3,
+          "narratives": 217
+        },
+        {
+          "product": "Debt collection",
+          "issue": "False statements or representation",
+          "complaints": 735,
+          "timely_pct": 97.4,
+          "narratives": 225
+        },
+        {
+          "product": "Checking or savings account",
+          "issue": "Managing an account",
+          "complaints": 621,
+          "timely_pct": 99.5,
+          "narratives": 344
+        },
+        {
+          "product": "Debt collection",
+          "issue": "Took or threatened to take negative or legal action",
+          "complaints": 360,
+          "timely_pct": 94.7,
+          "narratives": 142
+        },
+        {
+          "product": "Student loan",
+          "issue": "Dealing with your lender or servicer",
+          "complaints": 290,
+          "timely_pct": 89.3,
+          "narratives": 160
+        },
+        {
+          "product": "Credit card",
+          "issue": "Problem with a company's investigation into an existing problem",
+          "complaints": 274,
+          "timely_pct": 100.0,
+          "narratives": 27
+        },
+        {
+          "product": "Mortgage",
+          "issue": "Trouble during payment process",
+          "complaints": 274,
+          "timely_pct": 99.3,
+          "narratives": 184
+        },
+        {
+          "product": "Credit card",
+          "issue": "Problem with a purchase shown on your statement",
+          "complaints": 263,
+          "timely_pct": 99.6,
+          "narratives": 172
+        },
+        {
+          "product": "Credit card",
+          "issue": "Incorrect information on your report",
+          "complaints": 229,
+          "timely_pct": 100.0,
+          "narratives": 16
+        },
+        {
+          "product": "Credit reporting or other personal consumer reports",
+          "issue": "Unable to get your credit report or credit score",
+          "complaints": 209,
+          "timely_pct": 100.0,
+          "narratives": 104
+        },
+        {
+          "product": "Credit reporting or other personal consumer reports",
+          "issue": "Credit monitoring or identity theft protection services",
+          "complaints": 177,
+          "timely_pct": 98.3,
+          "narratives": 114
+        },
+        {
+          "product": "Credit card",
+          "issue": "Other features, terms, or problems",
+          "complaints": 167,
+          "timely_pct": 100.0,
+          "narratives": 99
+        },
+        {
+          "product": "Credit card",
+          "issue": "Getting a credit card",
+          "complaints": 162,
+          "timely_pct": 100.0,
+          "narratives": 77
+        },
+        {
+          "product": "Credit card",
+          "issue": "Fees or interest",
+          "complaints": 161,
+          "timely_pct": 100.0,
+          "narratives": 100
+        },
+        {
+          "product": "Checking or savings account",
+          "issue": "Closing an account",
+          "complaints": 161,
+          "timely_pct": 99.4,
+          "narratives": 97
+        },
+        {
+          "product": "Debt collection",
+          "issue": "Communication tactics",
+          "complaints": 160,
+          "timely_pct": 97.5,
+          "narratives": 68
+        },
+        {
+          "product": "Credit reporting or other personal consumer reports",
+          "issue": "Problem with fraud alerts or security freezes",
+          "complaints": 148,
+          "timely_pct": 100.0,
+          "narratives": 66
+        },
+        {
+          "product": "Checking or savings account",
+          "issue": "Problem with a lender or other company charging your account",
+          "complaints": 145,
+          "timely_pct": 100.0,
+          "narratives": 93
+        },
+        {
+          "product": "Money transfer, virtual currency, or money service",
+          "issue": "Fraud or scam",
+          "complaints": 125,
+          "timely_pct": 96.0,
+          "narratives": 79
+        },
+        {
+          "product": "Credit card",
+          "issue": "Problem when making payments",
+          "complaints": 112,
+          "timely_pct": 100.0,
+          "narratives": 69
+        },
+        {
+          "product": "Credit card",
+          "issue": "Closing your account",
+          "complaints": 109,
+          "timely_pct": 100.0,
+          "narratives": 62
+        },
+        {
+          "product": "Checking or savings account",
+          "issue": "Opening an account",
+          "complaints": 108,
+          "timely_pct": 100.0,
+          "narratives": 48
+        },
+        {
+          "product": "Vehicle loan or lease",
+          "issue": "Managing the loan or lease",
+          "complaints": 103,
+          "timely_pct": 98.1,
+          "narratives": 58
+        },
+        {
+          "product": "Prepaid card",
+          "issue": "Trouble using the card",
+          "complaints": 102,
+          "timely_pct": 92.2,
+          "narratives": 60
+        },
+        {
+          "product": "Checking or savings account",
+          "issue": "Problem caused by your funds being low",
+          "complaints": 100,
+          "timely_pct": 100.0,
+          "narratives": 63
+        },
+        {
+          "product": "Mortgage",
+          "issue": "Struggling to pay mortgage",
+          "complaints": 98,
+          "timely_pct": 100.0,
+          "narratives": 53
+        }
+      ],
+      "finding": {
+        "en": "Volume is an intake signal, not a company quality score; response behavior provides the actionable context.",
+        "pt": "Volume é um sinal de entrada, não uma nota de qualidade da empresa; o comportamento de resposta traz o contexto acionável."
+      },
+      "action": {
+        "en": "Prioritize high-volume product-issue pairs with weaker timely-response performance.",
+        "pt": "Priorize pares produto-problema de alto volume com pior desempenho de resposta no prazo."
+      }
+    },
+    {
+      "id": "issues",
+      "title": {
+        "en": "Emerging Issues",
+        "pt": "Problemas Emergentes"
+      },
+      "eyebrow": {
+        "en": "Change detection",
+        "pt": "Detecção de mudança"
+      },
+      "question": {
+        "en": "Which complaint themes are gaining operational relevance?",
+        "pt": "Quais temas de reclamação estão ganhando relevância operacional?"
+      },
+      "metrics": [
+        {
+          "id": "complaints",
+          "label": {
+            "en": "Complaints received",
+            "pt": "Reclamações recebidas"
+          },
+          "value": 74076,
+          "previous": 36158.0,
+          "format": "integer",
+          "improvement": "down"
+        },
+        {
+          "id": "timely",
+          "label": {
+            "en": "Timely response",
+            "pt": "Resposta no prazo"
+          },
+          "value": 0.9956801123170798,
+          "previous": 0.985723311193909,
+          "format": "percent",
+          "improvement": "up"
+        },
+        {
+          "id": "companies",
+          "label": {
+            "en": "Companies represented",
+            "pt": "Empresas representadas"
+          },
+          "value": 904.0,
+          "previous": 904.0,
+          "format": "integer",
+          "improvement": "up"
+        },
+        {
+          "id": "narratives",
+          "label": {
+            "en": "Narrative coverage",
+            "pt": "Cobertura de relatos"
+          },
+          "value": 0.27444786435552676,
+          "previous": 0.26895890706841624,
+          "format": "percent",
+          "improvement": "up"
+        }
+      ],
+      "trendTitle": {
+        "en": "Daily issue signal",
+        "pt": "Sinal diário de problemas"
+      },
+      "trend": [
+        {
+          "label": "Jan 01",
+          "value": 5453,
+          "secondary": 99.7
+        },
+        {
+          "label": "Jan 02",
+          "value": 12964,
+          "secondary": 99.7
+        },
+        {
+          "label": "Jan 03",
+          "value": 14121,
+          "secondary": 99.7
+        },
+        {
+          "label": "Jan 04",
+          "value": 7528,
+          "secondary": 99.0
+        },
+        {
+          "label": "Jan 05",
+          "value": 5757,
+          "secondary": 99.0
+        },
+        {
+          "label": "Jan 06",
+          "value": 13460,
+          "secondary": 99.7
+        },
+        {
+          "label": "Jan 07",
+          "value": 14793,
+          "secondary": 99.7
+        }
+      ],
+      "breakdownTitle": {
+        "en": "Issue concentration",
+        "pt": "Concentração de problemas"
+      },
+      "breakdown": [
+        {
+          "name": "Incorrect information on your report",
+          "value": 36624,
+          "timely_pct": 99.9
+        },
+        {
+          "name": "Improper use of your report",
+          "value": 17457,
+          "timely_pct": 99.9
+        },
+        {
+          "name": "Problem with a company's investigation into an existing problem",
+          "value": 10751,
+          "timely_pct": 99.9
+        },
+        {
+          "name": "Attempts to collect debt not owed",
+          "value": 1978,
+          "timely_pct": 97.5
+        },
+        {
+          "name": "Written notification about debt",
+          "value": 1025,
+          "timely_pct": 98.3
+        },
+        {
+          "name": "False statements or representation",
+          "value": 735,
+          "timely_pct": 97.4
+        },
+        {
+          "name": "Managing an account",
+          "value": 622,
+          "timely_pct": 99.5
+        },
+        {
+          "name": "Took or threatened to take negative or legal action",
+          "value": 360,
+          "timely_pct": 94.7
+        },
+        {
+          "name": "Dealing with your lender or servicer",
+          "value": 290,
+          "timely_pct": 89.3
+        },
+        {
+          "name": "Trouble during payment process",
+          "value": 274,
+          "timely_pct": 99.3
+        },
+        {
+          "name": "Problem with a purchase shown on your statement",
+          "value": 263,
+          "timely_pct": 99.6
+        },
+        {
+          "name": "Unable to get your credit report or credit score",
+          "value": 210,
+          "timely_pct": 100.0
+        },
+        {
+          "name": "Credit monitoring or identity theft protection services",
+          "value": 187,
+          "timely_pct": 98.4
+        },
+        {
+          "name": "Other features, terms, or problems",
+          "value": 167,
+          "timely_pct": 100.0
+        },
+        {
+          "name": "Getting a credit card",
+          "value": 162,
+          "timely_pct": 100.0
+        }
+      ],
+      "detailTitle": {
+        "en": "Issue evidence",
+        "pt": "Evidências dos problemas"
+      },
+      "detail": [
+        {
+          "product": "Credit reporting or other personal consumer reports",
+          "issue": "Incorrect information on your report",
+          "complaints": 36323,
+          "timely_pct": 99.9,
+          "narratives": 8759
+        },
+        {
+          "product": "Credit reporting or other personal consumer reports",
+          "issue": "Improper use of your report",
+          "complaints": 17408,
+          "timely_pct": 99.9,
+          "narratives": 4502
+        },
+        {
+          "product": "Credit reporting or other personal consumer reports",
+          "issue": "Problem with a company's investigation into an existing problem",
+          "complaints": 10454,
+          "timely_pct": 99.9,
+          "narratives": 2670
+        },
+        {
+          "product": "Debt collection",
+          "issue": "Attempts to collect debt not owed",
+          "complaints": 1978,
+          "timely_pct": 97.5,
+          "narratives": 720
+        },
+        {
+          "product": "Debt collection",
+          "issue": "Written notification about debt",
+          "complaints": 1025,
+          "timely_pct": 98.3,
+          "narratives": 217
+        },
+        {
+          "product": "Debt collection",
+          "issue": "False statements or representation",
+          "complaints": 735,
+          "timely_pct": 97.4,
+          "narratives": 225
+        },
+        {
+          "product": "Checking or savings account",
+          "issue": "Managing an account",
+          "complaints": 621,
+          "timely_pct": 99.5,
+          "narratives": 344
+        },
+        {
+          "product": "Debt collection",
+          "issue": "Took or threatened to take negative or legal action",
+          "complaints": 360,
+          "timely_pct": 94.7,
+          "narratives": 142
+        },
+        {
+          "product": "Student loan",
+          "issue": "Dealing with your lender or servicer",
+          "complaints": 290,
+          "timely_pct": 89.3,
+          "narratives": 160
+        },
+        {
+          "product": "Credit card",
+          "issue": "Problem with a company's investigation into an existing problem",
+          "complaints": 274,
+          "timely_pct": 100.0,
+          "narratives": 27
+        },
+        {
+          "product": "Mortgage",
+          "issue": "Trouble during payment process",
+          "complaints": 274,
+          "timely_pct": 99.3,
+          "narratives": 184
+        },
+        {
+          "product": "Credit card",
+          "issue": "Problem with a purchase shown on your statement",
+          "complaints": 263,
+          "timely_pct": 99.6,
+          "narratives": 172
+        },
+        {
+          "product": "Credit card",
+          "issue": "Incorrect information on your report",
+          "complaints": 229,
+          "timely_pct": 100.0,
+          "narratives": 16
+        },
+        {
+          "product": "Credit reporting or other personal consumer reports",
+          "issue": "Unable to get your credit report or credit score",
+          "complaints": 209,
+          "timely_pct": 100.0,
+          "narratives": 104
+        },
+        {
+          "product": "Credit reporting or other personal consumer reports",
+          "issue": "Credit monitoring or identity theft protection services",
+          "complaints": 177,
+          "timely_pct": 98.3,
+          "narratives": 114
+        },
+        {
+          "product": "Credit card",
+          "issue": "Other features, terms, or problems",
+          "complaints": 167,
+          "timely_pct": 100.0,
+          "narratives": 99
+        },
+        {
+          "product": "Credit card",
+          "issue": "Getting a credit card",
+          "complaints": 162,
+          "timely_pct": 100.0,
+          "narratives": 77
+        },
+        {
+          "product": "Credit card",
+          "issue": "Fees or interest",
+          "complaints": 161,
+          "timely_pct": 100.0,
+          "narratives": 100
+        },
+        {
+          "product": "Checking or savings account",
+          "issue": "Closing an account",
+          "complaints": 161,
+          "timely_pct": 99.4,
+          "narratives": 97
+        },
+        {
+          "product": "Debt collection",
+          "issue": "Communication tactics",
+          "complaints": 160,
+          "timely_pct": 97.5,
+          "narratives": 68
+        },
+        {
+          "product": "Credit reporting or other personal consumer reports",
+          "issue": "Problem with fraud alerts or security freezes",
+          "complaints": 148,
+          "timely_pct": 100.0,
+          "narratives": 66
+        },
+        {
+          "product": "Checking or savings account",
+          "issue": "Problem with a lender or other company charging your account",
+          "complaints": 145,
+          "timely_pct": 100.0,
+          "narratives": 93
+        },
+        {
+          "product": "Money transfer, virtual currency, or money service",
+          "issue": "Fraud or scam",
+          "complaints": 125,
+          "timely_pct": 96.0,
+          "narratives": 79
+        },
+        {
+          "product": "Credit card",
+          "issue": "Problem when making payments",
+          "complaints": 112,
+          "timely_pct": 100.0,
+          "narratives": 69
+        },
+        {
+          "product": "Credit card",
+          "issue": "Closing your account",
+          "complaints": 109,
+          "timely_pct": 100.0,
+          "narratives": 62
+        },
+        {
+          "product": "Checking or savings account",
+          "issue": "Opening an account",
+          "complaints": 108,
+          "timely_pct": 100.0,
+          "narratives": 48
+        },
+        {
+          "product": "Vehicle loan or lease",
+          "issue": "Managing the loan or lease",
+          "complaints": 103,
+          "timely_pct": 98.1,
+          "narratives": 58
+        },
+        {
+          "product": "Prepaid card",
+          "issue": "Trouble using the card",
+          "complaints": 102,
+          "timely_pct": 92.2,
+          "narratives": 60
+        },
+        {
+          "product": "Checking or savings account",
+          "issue": "Problem caused by your funds being low",
+          "complaints": 100,
+          "timely_pct": 100.0,
+          "narratives": 63
+        },
+        {
+          "product": "Mortgage",
+          "issue": "Struggling to pay mortgage",
+          "complaints": 98,
+          "timely_pct": 100.0,
+          "narratives": 53
+        }
+      ],
+      "finding": {
+        "en": "Issue taxonomy reveals where customer friction concentrates without claiming causal harm.",
+        "pt": "A taxonomia mostra onde o atrito se concentra sem afirmar dano causal."
+      },
+      "action": {
+        "en": "Track issue share and response performance together before escalating an emerging theme.",
+        "pt": "Acompanhe participação do problema e desempenho de resposta antes de escalar um tema emergente."
+      }
+    },
+    {
+      "id": "response",
+      "title": {
+        "en": "Response Performance",
+        "pt": "Desempenho de Resposta"
+      },
+      "eyebrow": {
+        "en": "Service control",
+        "pt": "Controle de atendimento"
+      },
+      "question": {
+        "en": "Are companies responding consistently within the CFPB process window?",
+        "pt": "As empresas respondem de forma consistente dentro do prazo do processo CFPB?"
+      },
+      "metrics": [
+        {
+          "id": "complaints",
+          "label": {
+            "en": "Complaints received",
+            "pt": "Reclamações recebidas"
+          },
+          "value": 74076,
+          "previous": 36158.0,
+          "format": "integer",
+          "improvement": "down"
+        },
+        {
+          "id": "timely",
+          "label": {
+            "en": "Timely response",
+            "pt": "Resposta no prazo"
+          },
+          "value": 0.9956801123170798,
+          "previous": 0.985723311193909,
+          "format": "percent",
+          "improvement": "up"
+        },
+        {
+          "id": "companies",
+          "label": {
+            "en": "Companies represented",
+            "pt": "Empresas representadas"
+          },
+          "value": 904.0,
+          "previous": 904.0,
+          "format": "integer",
+          "improvement": "up"
+        },
+        {
+          "id": "narratives",
+          "label": {
+            "en": "Narrative coverage",
+            "pt": "Cobertura de relatos"
+          },
+          "value": 0.27444786435552676,
+          "previous": 0.26895890706841624,
+          "format": "percent",
+          "improvement": "up"
+        },
+        {
+          "id": "relief",
+          "label": {
+            "en": "Monetary relief share",
+            "pt": "Parcela com compensação"
+          },
+          "value": 0.4738511798693234,
+          "previous": 0.45015862087585723,
+          "format": "percent",
+          "improvement": "up"
+        }
+      ],
+      "trendTitle": {
+        "en": "Timeliness over time",
+        "pt": "Pontualidade ao longo do tempo"
+      },
+      "trend": [
+        {
+          "label": "Jan 01",
+          "value": 5453,
+          "secondary": 99.7
+        },
+        {
+          "label": "Jan 02",
+          "value": 12964,
+          "secondary": 99.7
+        },
+        {
+          "label": "Jan 03",
+          "value": 14121,
+          "secondary": 99.7
+        },
+        {
+          "label": "Jan 04",
+          "value": 7528,
+          "secondary": 99.0
+        },
+        {
+          "label": "Jan 05",
+          "value": 5757,
+          "secondary": 99.0
+        },
+        {
+          "label": "Jan 06",
+          "value": 13460,
+          "secondary": 99.7
+        },
+        {
+          "label": "Jan 07",
+          "value": 14793,
+          "secondary": 99.7
+        }
+      ],
+      "breakdownTitle": {
+        "en": "Response outcomes",
+        "pt": "Resultados das respostas"
+      },
+      "breakdown": [
+        {
+          "name": "Closed with explanation",
+          "value": 38886,
+          "timely_pct": 99.5
+        },
+        {
+          "name": "Closed with non-monetary relief",
+          "value": 34560,
+          "timely_pct": 99.9
+        },
+        {
+          "name": "Closed with monetary relief",
+          "value": 541,
+          "timely_pct": 100.0
+        },
+        {
+          "name": "Untimely response",
+          "value": 89,
+          "timely_pct": 0.0
+        }
+      ],
+      "detailTitle": {
+        "en": "Company-product context",
+        "pt": "Contexto empresa-produto"
+      },
+      "detail": [
+        {
+          "company": "TRANSUNION INTERMEDIATE HOLDINGS, INC.",
+          "product": "Credit reporting or other personal consumer reports",
+          "complaints": 20684,
+          "timely_pct": 100.0,
+          "relief_pct": 85.4,
+          "narrative_count": 4899
+        },
+        {
+          "company": "Experian Information Solutions Inc.",
+          "product": "Credit reporting or other personal consumer reports",
+          "complaints": 20624,
+          "timely_pct": 100.0,
+          "relief_pct": 6.1,
+          "narrative_count": 5104
+        },
+        {
+          "company": "EQUIFAX, INC.",
+          "product": "Credit reporting or other personal consumer reports",
+          "complaints": 19805,
+          "timely_pct": 100.0,
+          "relief_pct": 66.2,
+          "narrative_count": 4833
+        },
+        {
+          "company": "Experian Information Solutions Inc.",
+          "product": "Debt collection",
+          "complaints": 396,
+          "timely_pct": 100.0,
+          "relief_pct": 4.3,
+          "narrative_count": 89
+        },
+        {
+          "company": "TRANSUNION INTERMEDIATE HOLDINGS, INC.",
+          "product": "Debt collection",
+          "complaints": 365,
+          "timely_pct": 100.0,
+          "relief_pct": 90.4,
+          "narrative_count": 75
+        },
+        {
+          "company": "EQUIFAX, INC.",
+          "product": "Debt collection",
+          "complaints": 343,
+          "timely_pct": 100.0,
+          "relief_pct": 59.8,
+          "narrative_count": 66
+        },
+        {
+          "company": "Resurgent Capital Services L.P.",
+          "product": "Debt collection",
+          "complaints": 334,
+          "timely_pct": 100.0,
+          "relief_pct": 35.6,
+          "narrative_count": 102
+        },
+        {
+          "company": "CBC Companies, Inc.",
+          "product": "Credit reporting or other personal consumer reports",
+          "complaints": 278,
+          "timely_pct": 100.0,
+          "relief_pct": 68.7,
+          "narrative_count": 12
+        },
+        {
+          "company": "CAPITAL ONE FINANCIAL CORPORATION",
+          "product": "Credit reporting or other personal consumer reports",
+          "complaints": 255,
+          "timely_pct": 100.0,
+          "relief_pct": 23.1,
+          "narrative_count": 113
+        },
+        {
+          "company": "MOHELA",
+          "product": "Student loan",
+          "complaints": 223,
+          "timely_pct": 100.0,
+          "relief_pct": 0.0,
+          "narrative_count": 125
+        },
+        {
+          "company": "LEXISNEXIS",
+          "product": "Credit reporting or other personal consumer reports",
+          "complaints": 205,
+          "timely_pct": 99.0,
+          "relief_pct": 38.0,
+          "narrative_count": 45
+        },
+        {
+          "company": "CL Holdings LLC",
+          "product": "Debt collection",
+          "complaints": 200,
+          "timely_pct": 100.0,
+          "relief_pct": 0.0,
+          "narrative_count": 74
+        },
+        {
+          "company": "Portfolio Recovery Associates, LLC",
+          "product": "Debt collection",
+          "complaints": 192,
+          "timely_pct": 94.3,
+          "relief_pct": 43.2,
+          "narrative_count": 58
+        },
+        {
+          "company": "ENCORE CAPITAL GROUP INC.",
+          "product": "Debt collection",
+          "complaints": 180,
+          "timely_pct": 100.0,
+          "relief_pct": 47.2,
+          "narrative_count": 54
+        },
+        {
+          "company": "Experian Information Solutions Inc.",
+          "product": "Credit card",
+          "complaints": 171,
+          "timely_pct": 100.0,
+          "relief_pct": 1.2,
+          "narrative_count": 15
+        },
+        {
+          "company": "TRANSUNION INTERMEDIATE HOLDINGS, INC.",
+          "product": "Credit card",
+          "complaints": 162,
+          "timely_pct": 100.0,
+          "relief_pct": 88.9,
+          "narrative_count": 11
+        },
+        {
+          "company": "EQUIFAX, INC.",
+          "product": "Credit card",
+          "complaints": 152,
+          "timely_pct": 100.0,
+          "relief_pct": 56.6,
+          "narrative_count": 13
+        },
+        {
+          "company": "CITIBANK, N.A.",
+          "product": "Credit card",
+          "complaints": 143,
+          "timely_pct": 100.0,
+          "relief_pct": 58.7,
+          "narrative_count": 89
+        },
+        {
+          "company": "WELLS FARGO & COMPANY",
+          "product": "Checking or savings account",
+          "complaints": 141,
+          "timely_pct": 100.0,
+          "relief_pct": 14.2,
+          "narrative_count": 77
+        },
+        {
+          "company": "JPMORGAN CHASE & CO.",
+          "product": "Checking or savings account",
+          "complaints": 139,
+          "timely_pct": 100.0,
+          "relief_pct": 11.5,
+          "narrative_count": 73
+        },
+        {
+          "company": "CAPITAL ONE FINANCIAL CORPORATION",
+          "product": "Credit card",
+          "complaints": 136,
+          "timely_pct": 100.0,
+          "relief_pct": 29.4,
+          "narrative_count": 74
+        },
+        {
+          "company": "SYNCHRONY FINANCIAL",
+          "product": "Credit card",
+          "complaints": 123,
+          "timely_pct": 100.0,
+          "relief_pct": 22.0,
+          "narrative_count": 75
+        },
+        {
+          "company": "JPMORGAN CHASE & CO.",
+          "product": "Credit reporting or other personal consumer reports",
+          "complaints": 104,
+          "timely_pct": 100.0,
+          "relief_pct": 20.2,
+          "narrative_count": 48
+        },
+        {
+          "company": "BANK OF AMERICA, NATIONAL ASSOCIATION",
+          "product": "Checking or savings account",
+          "complaints": 102,
+          "timely_pct": 100.0,
+          "relief_pct": 49.0,
+          "narrative_count": 60
+        },
+        {
+          "company": "John C. Heath, Attorney at Law, PLLC",
+          "product": "Debt or credit management",
+          "complaints": 102,
+          "timely_pct": 69.6,
+          "relief_pct": 0.0,
+          "narrative_count": 59
+        },
+        {
+          "company": "Resurgent Capital Services L.P.",
+          "product": "Credit reporting or other personal consumer reports",
+          "complaints": 100,
+          "timely_pct": 100.0,
+          "relief_pct": 28.0,
+          "narrative_count": 40
+        },
+        {
+          "company": "JPMORGAN CHASE & CO.",
+          "product": "Credit card",
+          "complaints": 99,
+          "timely_pct": 100.0,
+          "relief_pct": 20.2,
+          "narrative_count": 59
+        },
+        {
+          "company": "CITIBANK, N.A.",
+          "product": "Credit reporting or other personal consumer reports",
+          "complaints": 96,
+          "timely_pct": 100.0,
+          "relief_pct": 72.9,
+          "narrative_count": 36
+        },
+        {
+          "company": "CCS Financial Services, Inc.",
+          "product": "Debt collection",
+          "complaints": 96,
+          "timely_pct": 47.9,
+          "relief_pct": 59.4,
+          "narrative_count": 24
+        },
+        {
+          "company": "AMERICAN EXPRESS COMPANY",
+          "product": "Credit card",
+          "complaints": 93,
+          "timely_pct": 100.0,
+          "relief_pct": 30.1,
+          "narrative_count": 54
+        }
+      ],
+      "finding": {
+        "en": "Company comparisons are restricted to operational response metrics and minimum sample sizes.",
+        "pt": "Comparações entre empresas ficam restritas a métricas operacionais e amostras mínimas."
+      },
+      "action": {
+        "en": "Investigate company-product combinations with adequate volume and below-peer timeliness.",
+        "pt": "Investigue combinações empresa-produto com volume adequado e pontualidade abaixo dos pares."
+      }
+    },
+    {
+      "id": "narratives",
+      "title": {
+        "en": "Narrative Explorer",
+        "pt": "Explorador de Relatos"
+      },
+      "eyebrow": {
+        "en": "Explainable text signal",
+        "pt": "Sinal textual explicável"
+      },
+      "question": {
+        "en": "What language in published narratives explains the structured issue categories?",
+        "pt": "Que linguagem nos relatos publicados explica as categorias estruturadas?"
+      },
+      "metrics": [
+        {
+          "id": "complaints",
+          "label": {
+            "en": "Complaints received",
+            "pt": "Reclamações recebidas"
+          },
+          "value": 74076,
+          "previous": 36158.0,
+          "format": "integer",
+          "improvement": "down"
+        },
+        {
+          "id": "narratives",
+          "label": {
+            "en": "Narrative coverage",
+            "pt": "Cobertura de relatos"
+          },
+          "value": 0.27444786435552676,
+          "previous": 0.26895890706841624,
+          "format": "percent",
+          "improvement": "up"
+        },
+        {
+          "id": "timely",
+          "label": {
+            "en": "Timely response",
+            "pt": "Resposta no prazo"
+          },
+          "value": 0.9956801123170798,
+          "previous": 0.985723311193909,
+          "format": "percent",
+          "improvement": "up"
+        }
+      ],
+      "trendTitle": {
+        "en": "Published narrative flow",
+        "pt": "Fluxo de relatos publicados"
+      },
+      "trend": [
+        {
+          "label": "Jan 01",
+          "value": 5453,
+          "secondary": 99.7
+        },
+        {
+          "label": "Jan 02",
+          "value": 12964,
+          "secondary": 99.7
+        },
+        {
+          "label": "Jan 03",
+          "value": 14121,
+          "secondary": 99.7
+        },
+        {
+          "label": "Jan 04",
+          "value": 7528,
+          "secondary": 99.0
+        },
+        {
+          "label": "Jan 05",
+          "value": 5757,
+          "secondary": 99.0
+        },
+        {
+          "label": "Jan 06",
+          "value": 13460,
+          "secondary": 99.7
+        },
+        {
+          "label": "Jan 07",
+          "value": 14793,
+          "secondary": 99.7
+        }
+      ],
+      "breakdownTitle": {
+        "en": "Explainable topic groups",
+        "pt": "Grupos de tópicos explicáveis"
+      },
+      "breakdown": [
+        {
+          "name": "Other service issues",
+          "value": 74076,
+          "timely_pct": 99.6,
+          "narratives": 20330
+        }
+      ],
+      "detailTitle": {
+        "en": "Narrative evidence",
+        "pt": "Evidência textual"
+      },
+      "detail": [
+        {
+          "received": "2025-01-07",
+          "product": "Checking or savings account",
+          "issue": "Managing an account",
+          "company": "M&T BANK CORPORATION",
+          "state": "PA",
+          "narrative_excerpt": "Beginning end of XXXX XXXX I noticed I had been a victim of someone ( a foreign man ) hacked into my XXXX Account and had access to all my personal information, had my phone calls "
+        },
+        {
+          "received": "2025-01-07",
+          "product": "Credit reporting or other personal consumer reports",
+          "issue": "Improper use of your report",
+          "company": "Experian Information Solutions Inc.",
+          "state": "GA",
+          "narrative_excerpt": "I recently checked my credit report and saw accounts reporting that i do not recognize."
+        },
+        {
+          "received": "2025-01-07",
+          "product": "Credit reporting or other personal consumer reports",
+          "issue": "Improper use of your report",
+          "company": "TRANSUNION INTERMEDIATE HOLDINGS, INC.",
+          "state": "GA",
+          "narrative_excerpt": "I recently checked my credit report and saw accounts reporting that i do not recognize."
+        },
+        {
+          "received": "2025-01-07",
+          "product": "Credit reporting or other personal consumer reports",
+          "issue": "Improper use of your report",
+          "company": "EQUIFAX, INC.",
+          "state": "VA",
+          "narrative_excerpt": "I've recently received a copy of my credit report and noticed several inaccuracies and unauthorized accounts/information to my credit report. These remarks have been detrimental to"
+        },
+        {
+          "received": "2025-01-07",
+          "product": "Credit reporting or other personal consumer reports",
+          "issue": "Incorrect information on your report",
+          "company": "EQUIFAX, INC.",
+          "state": "FL",
+          "narrative_excerpt": "My account with XXXXXXXX XXXX XXXX XXXX XXXX XXXX was never late! I have had exceptional payment history witH XXXX  XXXX and all payments were placed on Autopay. This late payment "
+        },
+        {
+          "received": "2025-01-07",
+          "product": "Credit reporting or other personal consumer reports",
+          "issue": "Incorrect information on your report",
+          "company": "TRANSUNION INTERMEDIATE HOLDINGS, INC.",
+          "state": "FL",
+          "narrative_excerpt": "This morning, I discovered accounts on my credit report that are completely inaccurate, and Im utterly baffled about how this happened. Ive checked my credit report like I always d"
+        },
+        {
+          "received": "2025-01-07",
+          "product": "Credit reporting or other personal consumer reports",
+          "issue": "Incorrect information on your report",
+          "company": "EQUIFAX, INC.",
+          "state": "FL",
+          "narrative_excerpt": "When I checked my credit report this morning, I was shocked to find accounts that dont belong to me, and I cant figure out how they got there. Ive been regularly monitoring my cred"
+        },
+        {
+          "received": "2025-01-07",
+          "product": "Credit reporting or other personal consumer reports",
+          "issue": "Incorrect information on your report",
+          "company": "Experian Information Solutions Inc.",
+          "state": "SC",
+          "narrative_excerpt": "I have already filed a complaint with the three credit bureaus regarding negative items on my credit report. However, my complaint was ignored, and I was wrongfully accused of usin"
+        },
+        {
+          "received": "2025-01-07",
+          "product": "Vehicle loan or lease",
+          "issue": "Repossession",
+          "company": "ALLY FINANCIAL INC.",
+          "state": "DE",
+          "narrative_excerpt": "XXXX XXXX XXXX XXXX XXXX XXXX, Delaware XXXX XXXX ( XXXX ) XXXX XX/XX/XXXX Ally Financial [ Address for Ally Financial Customer Service or Legal Department ] Subject : Request for "
+        },
+        {
+          "received": "2025-01-07",
+          "product": "Credit reporting or other personal consumer reports",
+          "issue": "Incorrect information on your report",
+          "company": "TRANSUNION INTERMEDIATE HOLDINGS, INC.",
+          "state": "LA",
+          "narrative_excerpt": "The credit report reported is inaccurate because I sold my vehicle to a dealership on XX/XX/year>, which was dated before my next car payment was due. The dealership, XXXX of XXXX "
+        },
+        {
+          "received": "2025-01-07",
+          "product": "Credit reporting or other personal consumer reports",
+          "issue": "Improper use of your report",
+          "company": "TRANSUNION INTERMEDIATE HOLDINGS, INC.",
+          "state": "TX",
+          "narrative_excerpt": "I did not approve these transactions to be included in my consumer report, neither in writing nor verbally. Therefore, I formally request that these accounts be blocked and removed"
+        },
+        {
+          "received": "2025-01-07",
+          "product": "Credit reporting or other personal consumer reports",
+          "issue": "Problem with a company's investigation into an existing problem",
+          "company": "EQUIFAX, INC.",
+          "state": "MD",
+          "narrative_excerpt": "My credit reports are inaccurate. These inaccuracies are causing creditors to deny me credit. You have the duty to report accurate information about consumers. Please investigate t"
+        },
+        {
+          "received": "2025-01-07",
+          "product": "Credit reporting or other personal consumer reports",
+          "issue": "Problem with a company's investigation into an existing problem",
+          "company": "Experian Information Solutions Inc.",
+          "state": "MD",
+          "narrative_excerpt": "My credit reports are inaccurate. These inaccuracies are causing creditors to deny me credit. You have the duty to report accurate information about consumers. Please investigate t"
+        },
+        {
+          "received": "2025-01-07",
+          "product": "Credit reporting or other personal consumer reports",
+          "issue": "Incorrect information on your report",
+          "company": "EQUIFAX, INC.",
+          "state": "PA",
+          "narrative_excerpt": "Subject : Dispute of Inaccurate Information on Credit Report and violation to the Fair credit reporting act. \n\nComplaint Summary : I am submitting this complaint against [ Credit B"
+        },
+        {
+          "received": "2025-01-07",
+          "product": "Credit reporting or other personal consumer reports",
+          "issue": "Incorrect information on your report",
+          "company": "EQUIFAX, INC.",
+          "state": "TX",
+          "narrative_excerpt": "My account with EQUIFAX XXXX XXXX was never late! I have had exceptional payment history all payments were placed on Autopay. This late payment that is reporting is a result on a s"
+        },
+        {
+          "received": "2025-01-07",
+          "product": "Checking or savings account",
+          "issue": "Managing an account",
+          "company": "Comerica",
+          "state": "TX",
+          "narrative_excerpt": "It stared in XX/XX/year> they blocked the card because my information was not updated and the I updated it and corrected information at the social security office and direct expres"
+        },
+        {
+          "received": "2025-01-07",
+          "product": "Credit reporting or other personal consumer reports",
+          "issue": "Improper use of your report",
+          "company": "EQUIFAX, INC.",
+          "state": "IL",
+          "narrative_excerpt": "XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXXXXXX XXXX and Equifax This CFPB complaint has been filed to request pursuant to FCRA 605B ( 15 U.S.C. 1681"
+        },
+        {
+          "received": "2025-01-07",
+          "product": "Credit reporting or other personal consumer reports",
+          "issue": "Improper use of your report",
+          "company": "TRANSUNION INTERMEDIATE HOLDINGS, INC.",
+          "state": "IL",
+          "narrative_excerpt": "XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXXXXXX, Transunion XXXX and XXXX This CFPB complaint has been filed to request pursuant to FCRA 605B ( 15 U.S.C. "
+        },
+        {
+          "received": "2025-01-07",
+          "product": "Credit reporting or other personal consumer reports",
+          "issue": "Improper use of your report",
+          "company": "Experian Information Solutions Inc.",
+          "state": "TX",
+          "narrative_excerpt": "I did not approve these transactions to be included in my consumer report, neither in writing nor verbally. Therefore, I formally request that these accounts be blocked and removed"
+        },
+        {
+          "received": "2025-01-07",
+          "product": "Credit reporting or other personal consumer reports",
+          "issue": "Problem with a company's investigation into an existing problem",
+          "company": "Experian Information Solutions Inc.",
+          "state": "IN",
+          "narrative_excerpt": "I received information someone had used my identity to open an XXXX  account in my name .I reported it to XXXX  by email and phone and was told they would investigate. Then same da"
+        },
+        {
+          "received": "2025-01-07",
+          "product": "Credit reporting or other personal consumer reports",
+          "issue": "Problem with a company's investigation into an existing problem",
+          "company": "TRANSUNION INTERMEDIATE HOLDINGS, INC.",
+          "state": "MD",
+          "narrative_excerpt": "My credit reports are inaccurate. These inaccuracies are causing creditors to deny me credit. You have the duty to report accurate information about consumers. Please investigate t"
+        },
+        {
+          "received": "2025-01-07",
+          "product": "Credit reporting or other personal consumer reports",
+          "issue": "Incorrect information on your report",
+          "company": "SYNCHRONY FINANCIAL",
+          "state": "MA",
+          "narrative_excerpt": "My credit report claims that I have too many phone numbers listed, which surprises me as I have never had a phone account ; I have only had prepaid phones. To add to this matter, I"
+        },
+        {
+          "received": "2025-01-07",
+          "product": "Credit reporting or other personal consumer reports",
+          "issue": "Improper use of your report",
+          "company": "EQUIFAX, INC.",
+          "state": "NY",
+          "narrative_excerpt": "My information was exposed in a data breach and to the dark web per my credit report. The only accounts I have is car note, and two credit cards. It has other people name connect t"
+        },
+        {
+          "received": "2025-01-07",
+          "product": "Money transfer, virtual currency, or money service",
+          "issue": "Fraud or scam",
+          "company": "Early Warning Services, LLC",
+          "state": "WA",
+          "narrative_excerpt": "Several transactions were made through XXXX XXXX XXXX and XXXX XXXX for a scholarship program to one XXXX XXXX amounting to {$11000.00} as a representative of a XXXX XXXX  program."
+        },
+        {
+          "received": "2025-01-07",
+          "product": "Credit card",
+          "issue": "Other features, terms, or problems",
+          "company": "CITIBANK, N.A.",
+          "state": "WA",
+          "narrative_excerpt": "Each year, I receive my Costco rewards certificate via email. For year XXXX, issued in XX/XX/XXXX, I have no email record of this certificate. The certificate expired XX/XX/XXXX. ("
+        }
+      ],
+      "finding": {
+        "en": "Keyword topic groups support triage but do not replace human review or establish truth.",
+        "pt": "Grupos por palavras-chave apoiam triagem, mas não substituem revisão humana nem estabelecem verdade."
+      },
+      "action": {
+        "en": "Use excerpts to formulate a review hypothesis, then validate it with operations and compliance.",
+        "pt": "Use trechos para formular uma hipótese de revisão e valide com operações e compliance."
+      }
+    },
+    {
+      "id": "context",
+      "title": {
+        "en": "Product & Geography",
+        "pt": "Produto e Geografia"
+      },
+      "eyebrow": {
+        "en": "Context, not league tables",
+        "pt": "Contexto, não ranking"
+      },
+      "question": {
+        "en": "How do product and geography change the service picture?",
+        "pt": "Como produto e geografia mudam o cenário de atendimento?"
+      },
+      "metrics": [
+        {
+          "id": "complaints",
+          "label": {
+            "en": "Complaints received",
+            "pt": "Reclamações recebidas"
+          },
+          "value": 74076,
+          "previous": 36158.0,
+          "format": "integer",
+          "improvement": "down"
+        },
+        {
+          "id": "timely",
+          "label": {
+            "en": "Timely response",
+            "pt": "Resposta no prazo"
+          },
+          "value": 0.9956801123170798,
+          "previous": 0.985723311193909,
+          "format": "percent",
+          "improvement": "up"
+        },
+        {
+          "id": "companies",
+          "label": {
+            "en": "Companies represented",
+            "pt": "Empresas representadas"
+          },
+          "value": 904.0,
+          "previous": 904.0,
+          "format": "integer",
+          "improvement": "up"
+        },
+        {
+          "id": "narratives",
+          "label": {
+            "en": "Narrative coverage",
+            "pt": "Cobertura de relatos"
+          },
+          "value": 0.27444786435552676,
+          "previous": 0.26895890706841624,
+          "format": "percent",
+          "improvement": "up"
+        }
+      ],
+      "trendTitle": {
+        "en": "Geographic intake",
+        "pt": "Entrada geográfica"
+      },
+      "trend": [
+        {
+          "label": "Jan 01",
+          "value": 5453,
+          "secondary": 99.7
+        },
+        {
+          "label": "Jan 02",
+          "value": 12964,
+          "secondary": 99.7
+        },
+        {
+          "label": "Jan 03",
+          "value": 14121,
+          "secondary": 99.7
+        },
+        {
+          "label": "Jan 04",
+          "value": 7528,
+          "secondary": 99.0
+        },
+        {
+          "label": "Jan 05",
+          "value": 5757,
+          "secondary": 99.0
+        },
+        {
+          "label": "Jan 06",
+          "value": 13460,
+          "secondary": 99.7
+        },
+        {
+          "label": "Jan 07",
+          "value": 14793,
+          "secondary": 99.7
+        }
+      ],
+      "breakdownTitle": {
+        "en": "State context",
+        "pt": "Contexto por estado"
+      },
+      "breakdown": [
+        {
+          "name": "FL",
+          "value": 10866,
+          "timely_pct": 99.7
+        },
+        {
+          "name": "TX",
+          "value": 10056,
+          "timely_pct": 99.6
+        },
+        {
+          "name": "CA",
+          "value": 6673,
+          "timely_pct": 99.7
+        },
+        {
+          "name": "GA",
+          "value": 5774,
+          "timely_pct": 99.5
+        },
+        {
+          "name": "NY",
+          "value": 4777,
+          "timely_pct": 99.6
+        },
+        {
+          "name": "IL",
+          "value": 3440,
+          "timely_pct": 99.6
+        },
+        {
+          "name": "PA",
+          "value": 3129,
+          "timely_pct": 99.6
+        },
+        {
+          "name": "NC",
+          "value": 2625,
+          "timely_pct": 99.8
+        },
+        {
+          "name": "NJ",
+          "value": 2497,
+          "timely_pct": 99.7
+        },
+        {
+          "name": "MD",
+          "value": 1995,
+          "timely_pct": 99.5
+        },
+        {
+          "name": "MI",
+          "value": 1852,
+          "timely_pct": 99.5
+        },
+        {
+          "name": "LA",
+          "value": 1656,
+          "timely_pct": 99.5
+        },
+        {
+          "name": "OH",
+          "value": 1499,
+          "timely_pct": 99.1
+        },
+        {
+          "name": "AL",
+          "value": 1480,
+          "timely_pct": 99.3
+        },
+        {
+          "name": "SC",
+          "value": 1471,
+          "timely_pct": 98.6
+        }
+      ],
+      "detailTitle": {
+        "en": "Product and issue context",
+        "pt": "Contexto de produto e problema"
+      },
+      "detail": [
+        {
+          "product": "Credit reporting or other personal consumer reports",
+          "issue": "Incorrect information on your report",
+          "complaints": 36323,
+          "timely_pct": 99.9,
+          "narratives": 8759
+        },
+        {
+          "product": "Credit reporting or other personal consumer reports",
+          "issue": "Improper use of your report",
+          "complaints": 17408,
+          "timely_pct": 99.9,
+          "narratives": 4502
+        },
+        {
+          "product": "Credit reporting or other personal consumer reports",
+          "issue": "Problem with a company's investigation into an existing problem",
+          "complaints": 10454,
+          "timely_pct": 99.9,
+          "narratives": 2670
+        },
+        {
+          "product": "Debt collection",
+          "issue": "Attempts to collect debt not owed",
+          "complaints": 1978,
+          "timely_pct": 97.5,
+          "narratives": 720
+        },
+        {
+          "product": "Debt collection",
+          "issue": "Written notification about debt",
+          "complaints": 1025,
+          "timely_pct": 98.3,
+          "narratives": 217
+        },
+        {
+          "product": "Debt collection",
+          "issue": "False statements or representation",
+          "complaints": 735,
+          "timely_pct": 97.4,
+          "narratives": 225
+        },
+        {
+          "product": "Checking or savings account",
+          "issue": "Managing an account",
+          "complaints": 621,
+          "timely_pct": 99.5,
+          "narratives": 344
+        },
+        {
+          "product": "Debt collection",
+          "issue": "Took or threatened to take negative or legal action",
+          "complaints": 360,
+          "timely_pct": 94.7,
+          "narratives": 142
+        },
+        {
+          "product": "Student loan",
+          "issue": "Dealing with your lender or servicer",
+          "complaints": 290,
+          "timely_pct": 89.3,
+          "narratives": 160
+        },
+        {
+          "product": "Credit card",
+          "issue": "Problem with a company's investigation into an existing problem",
+          "complaints": 274,
+          "timely_pct": 100.0,
+          "narratives": 27
+        },
+        {
+          "product": "Mortgage",
+          "issue": "Trouble during payment process",
+          "complaints": 274,
+          "timely_pct": 99.3,
+          "narratives": 184
+        },
+        {
+          "product": "Credit card",
+          "issue": "Problem with a purchase shown on your statement",
+          "complaints": 263,
+          "timely_pct": 99.6,
+          "narratives": 172
+        },
+        {
+          "product": "Credit card",
+          "issue": "Incorrect information on your report",
+          "complaints": 229,
+          "timely_pct": 100.0,
+          "narratives": 16
+        },
+        {
+          "product": "Credit reporting or other personal consumer reports",
+          "issue": "Unable to get your credit report or credit score",
+          "complaints": 209,
+          "timely_pct": 100.0,
+          "narratives": 104
+        },
+        {
+          "product": "Credit reporting or other personal consumer reports",
+          "issue": "Credit monitoring or identity theft protection services",
+          "complaints": 177,
+          "timely_pct": 98.3,
+          "narratives": 114
+        },
+        {
+          "product": "Credit card",
+          "issue": "Other features, terms, or problems",
+          "complaints": 167,
+          "timely_pct": 100.0,
+          "narratives": 99
+        },
+        {
+          "product": "Credit card",
+          "issue": "Getting a credit card",
+          "complaints": 162,
+          "timely_pct": 100.0,
+          "narratives": 77
+        },
+        {
+          "product": "Credit card",
+          "issue": "Fees or interest",
+          "complaints": 161,
+          "timely_pct": 100.0,
+          "narratives": 100
+        },
+        {
+          "product": "Checking or savings account",
+          "issue": "Closing an account",
+          "complaints": 161,
+          "timely_pct": 99.4,
+          "narratives": 97
+        },
+        {
+          "product": "Debt collection",
+          "issue": "Communication tactics",
+          "complaints": 160,
+          "timely_pct": 97.5,
+          "narratives": 68
+        },
+        {
+          "product": "Credit reporting or other personal consumer reports",
+          "issue": "Problem with fraud alerts or security freezes",
+          "complaints": 148,
+          "timely_pct": 100.0,
+          "narratives": 66
+        },
+        {
+          "product": "Checking or savings account",
+          "issue": "Problem with a lender or other company charging your account",
+          "complaints": 145,
+          "timely_pct": 100.0,
+          "narratives": 93
+        },
+        {
+          "product": "Money transfer, virtual currency, or money service",
+          "issue": "Fraud or scam",
+          "complaints": 125,
+          "timely_pct": 96.0,
+          "narratives": 79
+        },
+        {
+          "product": "Credit card",
+          "issue": "Problem when making payments",
+          "complaints": 112,
+          "timely_pct": 100.0,
+          "narratives": 69
+        },
+        {
+          "product": "Credit card",
+          "issue": "Closing your account",
+          "complaints": 109,
+          "timely_pct": 100.0,
+          "narratives": 62
+        },
+        {
+          "product": "Checking or savings account",
+          "issue": "Opening an account",
+          "complaints": 108,
+          "timely_pct": 100.0,
+          "narratives": 48
+        },
+        {
+          "product": "Vehicle loan or lease",
+          "issue": "Managing the loan or lease",
+          "complaints": 103,
+          "timely_pct": 98.1,
+          "narratives": 58
+        },
+        {
+          "product": "Prepaid card",
+          "issue": "Trouble using the card",
+          "complaints": 102,
+          "timely_pct": 92.2,
+          "narratives": 60
+        },
+        {
+          "product": "Checking or savings account",
+          "issue": "Problem caused by your funds being low",
+          "complaints": 100,
+          "timely_pct": 100.0,
+          "narratives": 63
+        },
+        {
+          "product": "Mortgage",
+          "issue": "Struggling to pay mortgage",
+          "complaints": 98,
+          "timely_pct": 100.0,
+          "narratives": 53
+        }
+      ],
+      "finding": {
+        "en": "Complaint mix varies by product and geography, making unsegmented company rankings misleading.",
+        "pt": "O mix varia por produto e geografia, tornando rankings não segmentados enganosos."
+      },
+      "action": {
+        "en": "Compare like-for-like product, period and geography before allocating service capacity.",
+        "pt": "Compare produto, período e geografia equivalentes antes de alocar capacidade de atendimento."
+      }
+    },
+    {
+      "id": "trust",
+      "title": {
+        "en": "Data Trust",
+        "pt": "Confiança dos Dados"
+      },
+      "eyebrow": {
+        "en": "Evidence governance",
+        "pt": "Governança de evidências"
+      },
+      "question": {
+        "en": "What can and cannot be concluded from public complaint data?",
+        "pt": "O que pode e não pode ser concluído com dados públicos de reclamações?"
+      },
+      "metrics": [
+        {
+          "id": "rows",
+          "label": {
+            "en": "Rows modeled",
+            "pt": "Linhas modeladas"
+          },
+          "value": 74076,
+          "previous": 74076,
+          "format": "integer",
+          "improvement": "up"
+        },
+        {
+          "id": "products",
+          "label": {
+            "en": "Products",
+            "pt": "Produtos"
+          },
+          "value": 11.0,
+          "previous": 0,
+          "format": "integer",
+          "improvement": "up"
+        },
+        {
+          "id": "companies",
+          "label": {
+            "en": "Companies represented",
+            "pt": "Empresas representadas"
+          },
+          "value": 904.0,
+          "previous": 904.0,
+          "format": "integer",
+          "improvement": "up"
+        },
+        {
+          "id": "days",
+          "label": {
+            "en": "Coverage days",
+            "pt": "Dias cobertos"
+          },
+          "value": 7,
+          "previous": 7,
+          "format": "integer",
+          "improvement": "up"
+        }
+      ],
+      "trendTitle": {
+        "en": "Daily source volume",
+        "pt": "Volume diário da fonte"
+      },
+      "trend": [
+        {
+          "label": "Jan 01",
+          "value": 5453,
+          "secondary": 99.7
+        },
+        {
+          "label": "Jan 02",
+          "value": 12964,
+          "secondary": 99.7
+        },
+        {
+          "label": "Jan 03",
+          "value": 14121,
+          "secondary": 99.7
+        },
+        {
+          "label": "Jan 04",
+          "value": 7528,
+          "secondary": 99.0
+        },
+        {
+          "label": "Jan 05",
+          "value": 5757,
+          "secondary": 99.0
+        },
+        {
+          "label": "Jan 06",
+          "value": 13460,
+          "secondary": 99.7
+        },
+        {
+          "label": "Jan 07",
+          "value": 14793,
+          "secondary": 99.7
+        }
+      ],
+      "breakdownTitle": {
+        "en": "Product coverage",
+        "pt": "Cobertura de produtos"
+      },
+      "breakdown": [
+        {
+          "name": "Credit reporting or other personal consumer reports",
+          "value": 64786,
+          "timely_pct": 99.9
+        },
+        {
+          "name": "Debt collection",
+          "value": 4369,
+          "timely_pct": 97.4
+        },
+        {
+          "name": "Credit card",
+          "value": 1638,
+          "timely_pct": 99.8
+        },
+        {
+          "name": "Checking or savings account",
+          "value": 1142,
+          "timely_pct": 99.6
+        },
+        {
+          "name": "Mortgage",
+          "value": 455,
+          "timely_pct": 99.1
+        },
+        {
+          "name": "Student loan",
+          "value": 413,
+          "timely_pct": 87.2
+        },
+        {
+          "name": "Money transfer, virtual currency, or money service",
+          "value": 390,
+          "timely_pct": 96.7
+        },
+        {
+          "name": "Vehicle loan or lease",
+          "value": 365,
+          "timely_pct": 98.9
+        },
+        {
+          "name": "Payday loan, title loan, personal loan, or advance loan",
+          "value": 198,
+          "timely_pct": 98.0
+        },
+        {
+          "name": "Prepaid card",
+          "value": 167,
+          "timely_pct": 92.2
+        },
+        {
+          "name": "Debt or credit management",
+          "value": 153,
+          "timely_pct": 77.8
+        }
+      ],
+      "detailTitle": {
+        "en": "Quality checks",
+        "pt": "Verificações de qualidade"
+      },
+      "detail": [
+        {
+          "product": "Credit reporting or other personal consumer reports",
+          "issue": "Incorrect information on your report",
+          "complaints": 36323,
+          "timely_pct": 99.9,
+          "narratives": 8759
+        },
+        {
+          "product": "Credit reporting or other personal consumer reports",
+          "issue": "Improper use of your report",
+          "complaints": 17408,
+          "timely_pct": 99.9,
+          "narratives": 4502
+        },
+        {
+          "product": "Credit reporting or other personal consumer reports",
+          "issue": "Problem with a company's investigation into an existing problem",
+          "complaints": 10454,
+          "timely_pct": 99.9,
+          "narratives": 2670
+        },
+        {
+          "product": "Debt collection",
+          "issue": "Attempts to collect debt not owed",
+          "complaints": 1978,
+          "timely_pct": 97.5,
+          "narratives": 720
+        },
+        {
+          "product": "Debt collection",
+          "issue": "Written notification about debt",
+          "complaints": 1025,
+          "timely_pct": 98.3,
+          "narratives": 217
+        },
+        {
+          "product": "Debt collection",
+          "issue": "False statements or representation",
+          "complaints": 735,
+          "timely_pct": 97.4,
+          "narratives": 225
+        },
+        {
+          "product": "Checking or savings account",
+          "issue": "Managing an account",
+          "complaints": 621,
+          "timely_pct": 99.5,
+          "narratives": 344
+        },
+        {
+          "product": "Debt collection",
+          "issue": "Took or threatened to take negative or legal action",
+          "complaints": 360,
+          "timely_pct": 94.7,
+          "narratives": 142
+        },
+        {
+          "product": "Student loan",
+          "issue": "Dealing with your lender or servicer",
+          "complaints": 290,
+          "timely_pct": 89.3,
+          "narratives": 160
+        },
+        {
+          "product": "Credit card",
+          "issue": "Problem with a company's investigation into an existing problem",
+          "complaints": 274,
+          "timely_pct": 100.0,
+          "narratives": 27
+        },
+        {
+          "product": "Mortgage",
+          "issue": "Trouble during payment process",
+          "complaints": 274,
+          "timely_pct": 99.3,
+          "narratives": 184
+        },
+        {
+          "product": "Credit card",
+          "issue": "Problem with a purchase shown on your statement",
+          "complaints": 263,
+          "timely_pct": 99.6,
+          "narratives": 172
+        },
+        {
+          "product": "Credit card",
+          "issue": "Incorrect information on your report",
+          "complaints": 229,
+          "timely_pct": 100.0,
+          "narratives": 16
+        },
+        {
+          "product": "Credit reporting or other personal consumer reports",
+          "issue": "Unable to get your credit report or credit score",
+          "complaints": 209,
+          "timely_pct": 100.0,
+          "narratives": 104
+        },
+        {
+          "product": "Credit reporting or other personal consumer reports",
+          "issue": "Credit monitoring or identity theft protection services",
+          "complaints": 177,
+          "timely_pct": 98.3,
+          "narratives": 114
+        },
+        {
+          "product": "Credit card",
+          "issue": "Other features, terms, or problems",
+          "complaints": 167,
+          "timely_pct": 100.0,
+          "narratives": 99
+        },
+        {
+          "product": "Credit card",
+          "issue": "Getting a credit card",
+          "complaints": 162,
+          "timely_pct": 100.0,
+          "narratives": 77
+        },
+        {
+          "product": "Credit card",
+          "issue": "Fees or interest",
+          "complaints": 161,
+          "timely_pct": 100.0,
+          "narratives": 100
+        },
+        {
+          "product": "Checking or savings account",
+          "issue": "Closing an account",
+          "complaints": 161,
+          "timely_pct": 99.4,
+          "narratives": 97
+        },
+        {
+          "product": "Debt collection",
+          "issue": "Communication tactics",
+          "complaints": 160,
+          "timely_pct": 97.5,
+          "narratives": 68
+        },
+        {
+          "product": "Credit reporting or other personal consumer reports",
+          "issue": "Problem with fraud alerts or security freezes",
+          "complaints": 148,
+          "timely_pct": 100.0,
+          "narratives": 66
+        },
+        {
+          "product": "Checking or savings account",
+          "issue": "Problem with a lender or other company charging your account",
+          "complaints": 145,
+          "timely_pct": 100.0,
+          "narratives": 93
+        },
+        {
+          "product": "Money transfer, virtual currency, or money service",
+          "issue": "Fraud or scam",
+          "complaints": 125,
+          "timely_pct": 96.0,
+          "narratives": 79
+        },
+        {
+          "product": "Credit card",
+          "issue": "Problem when making payments",
+          "complaints": 112,
+          "timely_pct": 100.0,
+          "narratives": 69
+        },
+        {
+          "product": "Credit card",
+          "issue": "Closing your account",
+          "complaints": 109,
+          "timely_pct": 100.0,
+          "narratives": 62
+        },
+        {
+          "product": "Checking or savings account",
+          "issue": "Opening an account",
+          "complaints": 108,
+          "timely_pct": 100.0,
+          "narratives": 48
+        },
+        {
+          "product": "Vehicle loan or lease",
+          "issue": "Managing the loan or lease",
+          "complaints": 103,
+          "timely_pct": 98.1,
+          "narratives": 58
+        },
+        {
+          "product": "Prepaid card",
+          "issue": "Trouble using the card",
+          "complaints": 102,
+          "timely_pct": 92.2,
+          "narratives": 60
+        },
+        {
+          "product": "Checking or savings account",
+          "issue": "Problem caused by your funds being low",
+          "complaints": 100,
+          "timely_pct": 100.0,
+          "narratives": 63
+        },
+        {
+          "product": "Mortgage",
+          "issue": "Struggling to pay mortgage",
+          "complaints": 98,
+          "timely_pct": 100.0,
+          "narratives": 53
+        }
+      ],
+      "finding": {
+        "en": "The database is not statistically representative and has no customer or transaction denominator.",
+        "pt": "A base não é estatisticamente representativa e não possui denominador de clientes ou transações."
+      },
+      "action": {
+        "en": "Never label a company best or worst from raw complaint volume; disclose recency and publication limitations.",
+        "pt": "Nunca classifique empresa como melhor ou pior pelo volume bruto; divulgue limitações de recência e publicação."
+      }
+    }
+  ]
+}
