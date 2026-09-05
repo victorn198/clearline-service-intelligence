@@ -1,5 +1,7 @@
 # Clearline Service Intelligence
 
+**[Abrir demo ao vivo](https://clearline-service-intelligence.pages.dev/)** · [Read in English](README.md)
+
 ## Documentação
 
 - [Guia completo do dashboard](docs/DASHBOARD_GUIDE.pt-BR.md)
@@ -21,6 +23,18 @@ Rankear empresas por volume bruto de reclamações cria uma falsa nota de qualid
 - Pipeline: `CSV oficial → Python/DuckDB → dbt → tópicos explicáveis → Parquet/JSON → React/ECharts`.
 - Volume não é taxa e a base não possui denominador de clientes ou transações.
 
+## Laboratório de evidências
+
+Todas as páginas usam cinco lentes complementares, sem repetir os números dos cards. A página de comando cobre:
+
+- **Sinal** identifica dias acima de um limite descritivo de média mais dois desvios-padrão.
+- **Drivers** atribui mudanças absolutas contra a janela anterior aos produtos.
+- **Prazo** traduz a taxa elevada no volume estimado de exceções remanescentes.
+- **Concentração** calcula participação do Top 3 e HHI sem tratar volume como nota de qualidade.
+- **Cenário** estima o efeito operacional de reduzir atrasos; não é previsão nem afirmação causal.
+
+Os laboratórios secundários são próprios para momento e triagem de temas, exceções e sensibilidade de SLA, cobertura e lacunas de revisão textual, contexto comparável de produto/geografia/empresa e completude, limites, reconciliação e prontidão das evidências.
+
 ## Execução
 
 ```powershell
@@ -32,7 +46,7 @@ python -m pipeline build
 npm run dev
 ```
 
-O case demonstra governança de evidências, métricas de resposta, análise textual interpretável, interface bilíngue e limitações explícitas. [Contato](mailto:comercial@wickoai.com.br).
-# Inovação de design
+O case demonstra governança de evidências, métricas de resposta, análise textual interpretável, interface bilíngue e limitações explícitas. [Contato](mailto:victorn198@outlook.com).
+## Inovação de design
 
 O **Gráfico de Controle de Sinais** separa variação esperada de dias acima de um limite estatístico de atenção. Ele apoia triagem sem apresentar volume de reclamações como causalidade, prevalência ou nota de qualidade da empresa.

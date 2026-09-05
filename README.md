@@ -2,6 +2,8 @@
 
 A financial-service operations case that turns official CFPB complaint data into issue detection, response monitoring, and explainable narrative triage.
 
+**[Open the live demo](https://clearline-service-intelligence.pages.dev/)** · [Leia em português](README.pt-BR.md)
+
 ![Clearline Service Command](docs/images/en/service-command.png)
 
 ## Business problem
@@ -20,6 +22,18 @@ Complaint dashboards often rank companies by raw volume, creating a false qualit
 `Service Command` → `Emerging Issues` → `Response Performance` → `Narrative Explorer` → `Product & Geography` → `Data Trust`
 
 The application supports issue triage, timely-response monitoring, product context, and explainable text groups. It does not label a company best or worst.
+
+### Evidence Lab
+
+Every page uses five complementary lenses instead of repeating the KPI cards. The command page covers:
+
+- **Signal** flags days above a descriptive mean-plus-two-standard-deviations attention limit.
+- **Drivers** attributes absolute volume changes versus the previous window to products.
+- **Timeliness** translates a high response rate into the remaining estimated exception volume.
+- **Concentration** reports Top 3 share and HHI without pretending complaint volume is a quality rate.
+- **Scenario** estimates the operational effect of reducing untimely responses; it is not a forecast or causal claim.
+
+The secondary labs are purpose-built for issue momentum and triage, response exceptions and SLA sensitivity, narrative coverage and review gaps, like-for-like product/geography/company context, and evidence completeness, boundaries, reconciliation, and readiness.
 
 ## Architecture
 
@@ -49,9 +63,9 @@ Validate with `python -m pipeline validate`, `pytest`, `npm test`, `npm run buil
 
 ## Client adaptation
 
-A production version would combine CRM tickets, contact-center events, account exposure, SLA policies, and quality-review outcomes. [Discuss a similar project](mailto:comercial@wickoai.com.br).
+A production version would combine CRM tickets, contact-center events, account exposure, SLA policies, and quality-review outcomes. [Discuss a similar project](mailto:victorn198@outlook.com).
 
 See [Portuguese documentation](README.pt-BR.md), [complete dashboard guide](docs/DASHBOARD_GUIDE.md), [metric catalog](docs/METRIC_CATALOG.md), and [demo guide](docs/DEMO_GUIDE.md).
-# Design innovation
+## Design innovation
 
 The **Signal Detection Control Chart** separates expected variation from days above a statistical attention limit. It supports triage without presenting complaint volume as causality, prevalence, or a company quality score.

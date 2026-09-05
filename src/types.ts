@@ -6,10 +6,10 @@ export type Metric = {
   value: number
   previous: number
   format: 'integer' | 'percent' | 'currency' | 'decimal'
-  improvement: 'up' | 'down'
+  improvement: 'up' | 'down' | 'neutral'
 }
 export type SeriesPoint = { label: string; value: number; secondary?: number }
-export type BreakdownRow = { name: string; value: number; share?: number; note?: string }
+export type BreakdownRow = { name: string; value: number; previous?: number; share?: number; note?: string }
 export type PageData = {
   id: string
   title: Localized

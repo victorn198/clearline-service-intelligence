@@ -2,7 +2,7 @@
   "meta": {
     "source": "CFPB Consumer Complaint Database · CC0",
     "period": "2025-01-01 — 2025-01-07",
-    "builtAt": "2026-08-19",
+    "builtAt": "2026-08-21",
     "rows": 74076,
     "limitations": {
       "en": "Complaint volume is not a rate and cannot measure company quality without customer or transaction exposure. Published narratives are consumer accounts scrubbed by CFPB.",
@@ -68,8 +68,8 @@
       "OneMain Finance Corporation",
       "Westlake Services, LLC",
       "Servicer under contract with Federal Student Aid",
-      "CAINE & WEINER COMPANY, INC.",
       "National Credit Adjusters, LLC",
+      "CAINE & WEINER COMPANY, INC.",
       "ROBINHOOD MARKETS INC.",
       "Spring Oaks Capital, LLC",
       "Self Financial Inc.",
@@ -182,7 +182,7 @@
           "value": 904.0,
           "previous": 904.0,
           "format": "integer",
-          "improvement": "up"
+          "improvement": "neutral"
         },
         {
           "id": "narratives",
@@ -204,7 +204,7 @@
           "value": 0.4738511798693234,
           "previous": 0.45015862087585723,
           "format": "percent",
-          "improvement": "up"
+          "improvement": "neutral"
         }
       ],
       "trendTitle": {
@@ -561,6 +561,28 @@
           "improvement": "down"
         },
         {
+          "id": "issues",
+          "label": {
+            "en": "Issue categories",
+            "pt": "Categorias de problema"
+          },
+          "value": 80.0,
+          "previous": 80.0,
+          "format": "integer",
+          "improvement": "down"
+        },
+        {
+          "id": "top_issue_share",
+          "label": {
+            "en": "Leading issue share",
+            "pt": "Participação do tema líder"
+          },
+          "value": 0.49441114531022196,
+          "previous": 0.4845229224040175,
+          "format": "percent",
+          "improvement": "down"
+        },
+        {
           "id": "timely",
           "label": {
             "en": "Timely response",
@@ -570,33 +592,11 @@
           "previous": 0.985723311193909,
           "format": "percent",
           "improvement": "up"
-        },
-        {
-          "id": "companies",
-          "label": {
-            "en": "Companies represented",
-            "pt": "Empresas representadas"
-          },
-          "value": 904.0,
-          "previous": 904.0,
-          "format": "integer",
-          "improvement": "up"
-        },
-        {
-          "id": "narratives",
-          "label": {
-            "en": "Narrative coverage",
-            "pt": "Cobertura de relatos"
-          },
-          "value": 0.27444786435552676,
-          "previous": 0.26895890706841624,
-          "format": "percent",
-          "improvement": "up"
         }
       ],
       "trendTitle": {
-        "en": "Daily issue signal",
-        "pt": "Sinal diário de problemas"
+        "en": "Active issue categories",
+        "pt": "Categorias de problema ativas"
       },
       "trend": [
         {
@@ -957,17 +957,6 @@
       },
       "metrics": [
         {
-          "id": "complaints",
-          "label": {
-            "en": "Complaints received",
-            "pt": "Reclamações recebidas"
-          },
-          "value": 74076,
-          "previous": 36158.0,
-          "format": "integer",
-          "improvement": "down"
-        },
-        {
           "id": "timely",
           "label": {
             "en": "Timely response",
@@ -979,26 +968,15 @@
           "improvement": "up"
         },
         {
-          "id": "companies",
+          "id": "untimely",
           "label": {
-            "en": "Companies represented",
-            "pt": "Empresas representadas"
+            "en": "Untimely responses",
+            "pt": "Respostas fora do prazo"
           },
-          "value": 904.0,
-          "previous": 904.0,
+          "value": 319.9999999999999,
+          "previous": 326.39999999999986,
           "format": "integer",
-          "improvement": "up"
-        },
-        {
-          "id": "narratives",
-          "label": {
-            "en": "Narrative coverage",
-            "pt": "Cobertura de relatos"
-          },
-          "value": 0.27444786435552676,
-          "previous": 0.26895890706841624,
-          "format": "percent",
-          "improvement": "up"
+          "improvement": "down"
         },
         {
           "id": "relief",
@@ -1009,12 +987,34 @@
           "value": 0.4738511798693234,
           "previous": 0.45015862087585723,
           "format": "percent",
-          "improvement": "up"
+          "improvement": "neutral"
+        },
+        {
+          "id": "companies",
+          "label": {
+            "en": "Companies represented",
+            "pt": "Empresas representadas"
+          },
+          "value": 904.0,
+          "previous": 904.0,
+          "format": "integer",
+          "improvement": "neutral"
+        },
+        {
+          "id": "responses",
+          "label": {
+            "en": "Response outcomes",
+            "pt": "Resultados de resposta"
+          },
+          "value": 4.0,
+          "previous": 4.0,
+          "format": "integer",
+          "improvement": "neutral"
         }
       ],
       "trendTitle": {
-        "en": "Timeliness over time",
-        "pt": "Pontualidade ao longo do tempo"
+        "en": "Daily timely-response rate",
+        "pt": "Taxa diária de resposta no prazo"
       },
       "trend": [
         {
@@ -1350,15 +1350,15 @@
       },
       "metrics": [
         {
-          "id": "complaints",
+          "id": "narrative_count",
           "label": {
-            "en": "Complaints received",
-            "pt": "Reclamações recebidas"
+            "en": "Published narratives",
+            "pt": "Relatos publicados"
           },
-          "value": 74076,
-          "previous": 36158.0,
+          "value": 20330.0,
+          "previous": 19923.4,
           "format": "integer",
-          "improvement": "down"
+          "improvement": "up"
         },
         {
           "id": "narratives",
@@ -1372,20 +1372,31 @@
           "improvement": "up"
         },
         {
-          "id": "timely",
+          "id": "topics",
           "label": {
-            "en": "Timely response",
-            "pt": "Resposta no prazo"
+            "en": "Explainable topics",
+            "pt": "Tópicos explicáveis"
           },
-          "value": 0.9956801123170798,
-          "previous": 0.985723311193909,
-          "format": "percent",
-          "improvement": "up"
+          "value": 6.0,
+          "previous": 6.0,
+          "format": "integer",
+          "improvement": "neutral"
+        },
+        {
+          "id": "missing_narratives",
+          "label": {
+            "en": "Records without narrative",
+            "pt": "Registros sem relato"
+          },
+          "value": 53746.0,
+          "previous": 54283.46,
+          "format": "integer",
+          "improvement": "down"
         }
       ],
       "trendTitle": {
-        "en": "Published narrative flow",
-        "pt": "Fluxo de relatos publicados"
+        "en": "Published narratives by day",
+        "pt": "Relatos publicados por dia"
       },
       "trend": [
         {
@@ -1430,10 +1441,40 @@
       },
       "breakdown": [
         {
+          "name": "Credit reporting accuracy",
+          "value": 35240,
+          "timely_pct": 99.9,
+          "narratives": 7325
+        },
+        {
           "name": "Other service issues",
-          "value": 74076,
-          "timely_pct": 99.6,
-          "narratives": 20330
+          "value": 25791,
+          "timely_pct": 99.5,
+          "narratives": 2503
+        },
+        {
+          "name": "Identity & fraud",
+          "value": 7731,
+          "timely_pct": 99.8,
+          "narratives": 7509
+        },
+        {
+          "name": "Debt collection",
+          "value": 2525,
+          "timely_pct": 97.9,
+          "narratives": 459
+        },
+        {
+          "name": "Payments & fees",
+          "value": 2475,
+          "timely_pct": 97.9,
+          "narratives": 2229
+        },
+        {
+          "name": "Account access",
+          "value": 314,
+          "timely_pct": 97.1,
+          "narratives": 305
         }
       ],
       "detailTitle": {
@@ -1669,24 +1710,35 @@
         {
           "id": "complaints",
           "label": {
-            "en": "Complaints received",
-            "pt": "Reclamações recebidas"
+            "en": "Complaints in scope",
+            "pt": "Reclamações no recorte"
           },
           "value": 74076,
           "previous": 36158.0,
           "format": "integer",
-          "improvement": "down"
+          "improvement": "neutral"
         },
         {
-          "id": "timely",
+          "id": "states",
           "label": {
-            "en": "Timely response",
-            "pt": "Resposta no prazo"
+            "en": "States represented",
+            "pt": "Estados representados"
           },
-          "value": 0.9956801123170798,
-          "previous": 0.985723311193909,
-          "format": "percent",
-          "improvement": "up"
+          "value": 57.0,
+          "previous": 57.0,
+          "format": "integer",
+          "improvement": "neutral"
+        },
+        {
+          "id": "products",
+          "label": {
+            "en": "Products",
+            "pt": "Produtos"
+          },
+          "value": 11.0,
+          "previous": 11.0,
+          "format": "integer",
+          "improvement": "neutral"
         },
         {
           "id": "companies",
@@ -1697,23 +1749,12 @@
           "value": 904.0,
           "previous": 904.0,
           "format": "integer",
-          "improvement": "up"
-        },
-        {
-          "id": "narratives",
-          "label": {
-            "en": "Narrative coverage",
-            "pt": "Cobertura de relatos"
-          },
-          "value": 0.27444786435552676,
-          "previous": 0.26895890706841624,
-          "format": "percent",
-          "improvement": "up"
+          "improvement": "neutral"
         }
       ],
       "trendTitle": {
-        "en": "Geographic intake",
-        "pt": "Entrada geográfica"
+        "en": "States active by day",
+        "pt": "Estados ativos por dia"
       },
       "trend": [
         {
@@ -2082,7 +2123,7 @@
           "value": 74076,
           "previous": 74076,
           "format": "integer",
-          "improvement": "up"
+          "improvement": "neutral"
         },
         {
           "id": "products",
@@ -2093,7 +2134,7 @@
           "value": 11.0,
           "previous": 0,
           "format": "integer",
-          "improvement": "up"
+          "improvement": "neutral"
         },
         {
           "id": "companies",
@@ -2104,7 +2145,7 @@
           "value": 904.0,
           "previous": 904.0,
           "format": "integer",
-          "improvement": "up"
+          "improvement": "neutral"
         },
         {
           "id": "days",
@@ -2115,12 +2156,12 @@
           "value": 7,
           "previous": 7,
           "format": "integer",
-          "improvement": "up"
+          "improvement": "neutral"
         }
       ],
       "trendTitle": {
-        "en": "Daily source volume",
-        "pt": "Volume diário da fonte"
+        "en": "Critical-field completeness",
+        "pt": "Completude dos campos críticos"
       },
       "trend": [
         {
