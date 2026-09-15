@@ -15,7 +15,7 @@
 
 - KPI cards summarize the selected scope; the daily chart describes only the observed seven-day profile.
 - Three or seven observations are rendered as bars, not as a smoothed trend line.
-- Filled marks show the current period and outlined marks show the comparable prior period.
+- Bars show the current period and compact reference markers show the comparable prior period.
 - Favorable and unfavorable movement is colored according to response and coverage semantics.
 - The five-lens lab separates daily profile, volume drivers, timeliness, concentration and SLA scenario.
 - Complaint volume is not a complaint rate and cannot rank company quality without an exposure denominator.

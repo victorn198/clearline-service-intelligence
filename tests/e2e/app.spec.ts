@@ -76,3 +76,11 @@ test('does not show static evidence when the complaint mart cannot load', async 
   await expect(page.locator('.metric-card')).toHaveCount(0)
   await expect(page.locator('.evidence-lab')).toHaveCount(0)
 })
+test('returns to the top when changing dashboard pages',async({page})=>{
+  await page.goto('/')
+  await page.locator('.decision-strip:not(.is-loading)').waitFor({timeout:90000})
+  await page.evaluate(()=>window.scrollTo(0,document.body.scrollHeight))
+  expect(await page.evaluate(()=>window.scrollY)).toBeGreaterThan(0)
+  await page.getByRole('button',{name:'Emerging Issues'}).click()
+  await expect.poll(()=>page.evaluate(()=>window.scrollY)).toBe(0)
+})
