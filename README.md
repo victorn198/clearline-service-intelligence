@@ -65,7 +65,7 @@ Validate with `python -m pipeline validate`, `pytest`, `npm test`, `npm run buil
 
 A production version would combine CRM tickets, contact-center events, account exposure, SLA policies, and quality-review outcomes. [Discuss a similar project](mailto:victorn198@outlook.com).
 
-See [Portuguese documentation](README.pt-BR.md), [complete dashboard guide](docs/DASHBOARD_GUIDE.md), [metric catalog](docs/METRIC_CATALOG.md), and [demo guide](docs/DEMO_GUIDE.md).
+See [Portuguese documentation](README.pt-BR.md), [analytical readout](docs/ANALYSIS_READOUT.md), [data audit](docs/DATA_AUDIT.md), [complete dashboard guide](docs/DASHBOARD_GUIDE.md), [metric catalog](docs/METRIC_CATALOG.md), and [demo guide](docs/DEMO_GUIDE.md).
 ## Design innovation
 
 The **Signal Detection Control Chart** separates expected variation from days above a statistical attention limit. It supports triage without presenting complaint volume as causality, prevalence, or a company quality score.

@@ -7,6 +7,8 @@
 - [Guia completo do dashboard](docs/DASHBOARD_GUIDE.pt-BR.md)
 - [Catálogo de métricas](docs/METRIC_CATALOG.md)
 - [Roteiro de demonstração](docs/DEMO_GUIDE.md)
+- [Leitura analítica em português](docs/ANALYSIS_READOUT.pt-BR.md)
+- [Auditoria dos dados](docs/DATA_AUDIT.md)
 
 ![Comando de atendimento do Clearline](docs/images/pt/overview.png)
 

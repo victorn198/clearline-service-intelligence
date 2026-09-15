@@ -2,7 +2,7 @@
   "meta": {
     "source": "CFPB Consumer Complaint Database · CC0",
     "period": "2025-01-01 — 2025-01-07",
-    "builtAt": "2026-08-21",
+    "builtAt": "2026-09-15",
     "rows": 74076,
     "limitations": {
       "en": "Complaint volume is not a rate and cannot measure company quality without customer or transaction exposure. Published narratives are consumer accounts scrubbed by CFPB.",
@@ -48,11 +48,11 @@
       "CCS Financial Services, Inc.",
       "TRUIST FINANCIAL CORPORATION",
       "Early Warning Services, LLC",
-      "TD BANK US HOLDING COMPANY",
       "U.S. BANCORP",
+      "TD BANK US HOLDING COMPANY",
       "I.C. System, Inc.",
-      "National Credit Systems,Inc.",
       "TRANSWORLD SYSTEMS INC",
+      "National Credit Systems,Inc.",
       "Fidelity National Information Services, Inc. (FNIS)",
       "Block, Inc.",
       "SANTANDER HOLDINGS USA, INC.",
@@ -68,8 +68,8 @@
       "OneMain Finance Corporation",
       "Westlake Services, LLC",
       "Servicer under contract with Federal Student Aid",
-      "National Credit Adjusters, LLC",
       "CAINE & WEINER COMPANY, INC.",
+      "National Credit Adjusters, LLC",
       "ROBINHOOD MARKETS INC.",
       "Spring Oaks Capital, LLC",
       "Self Financial Inc.",
@@ -158,7 +158,7 @@
             "pt": "Reclamações recebidas"
           },
           "value": 74076,
-          "previous": 36158.0,
+          "previous": 0,
           "format": "integer",
           "improvement": "down"
         },
@@ -169,7 +169,7 @@
             "pt": "Resposta no prazo"
           },
           "value": 0.9956801123170798,
-          "previous": 0.985723311193909,
+          "previous": 0,
           "format": "percent",
           "improvement": "up"
         },
@@ -180,7 +180,7 @@
             "pt": "Empresas representadas"
           },
           "value": 904.0,
-          "previous": 904.0,
+          "previous": 0,
           "format": "integer",
           "improvement": "neutral"
         },
@@ -191,7 +191,7 @@
             "pt": "Cobertura de relatos"
           },
           "value": 0.27444786435552676,
-          "previous": 0.26895890706841624,
+          "previous": 0,
           "format": "percent",
           "improvement": "up"
         },
@@ -202,7 +202,7 @@
             "pt": "Parcela com compensação"
           },
           "value": 0.4738511798693234,
-          "previous": 0.45015862087585723,
+          "previous": 0,
           "format": "percent",
           "improvement": "neutral"
         }
@@ -378,18 +378,18 @@
           "narratives": 160
         },
         {
-          "product": "Credit card",
-          "issue": "Problem with a company's investigation into an existing problem",
-          "complaints": 274,
-          "timely_pct": 100.0,
-          "narratives": 27
-        },
-        {
           "product": "Mortgage",
           "issue": "Trouble during payment process",
           "complaints": 274,
           "timely_pct": 99.3,
           "narratives": 184
+        },
+        {
+          "product": "Credit card",
+          "issue": "Problem with a company's investigation into an existing problem",
+          "complaints": 274,
+          "timely_pct": 100.0,
+          "narratives": 27
         },
         {
           "product": "Credit card",
@@ -434,18 +434,18 @@
           "narratives": 77
         },
         {
-          "product": "Credit card",
-          "issue": "Fees or interest",
-          "complaints": 161,
-          "timely_pct": 100.0,
-          "narratives": 100
-        },
-        {
           "product": "Checking or savings account",
           "issue": "Closing an account",
           "complaints": 161,
           "timely_pct": 99.4,
           "narratives": 97
+        },
+        {
+          "product": "Credit card",
+          "issue": "Fees or interest",
+          "complaints": 161,
+          "timely_pct": 100.0,
+          "narratives": 100
         },
         {
           "product": "Debt collection",
@@ -556,7 +556,7 @@
             "pt": "Reclamações recebidas"
           },
           "value": 74076,
-          "previous": 36158.0,
+          "previous": 0,
           "format": "integer",
           "improvement": "down"
         },
@@ -567,7 +567,7 @@
             "pt": "Categorias de problema"
           },
           "value": 80.0,
-          "previous": 80.0,
+          "previous": 0,
           "format": "integer",
           "improvement": "down"
         },
@@ -578,7 +578,7 @@
             "pt": "Participação do tema líder"
           },
           "value": 0.49441114531022196,
-          "previous": 0.4845229224040175,
+          "previous": 0,
           "format": "percent",
           "improvement": "down"
         },
@@ -589,7 +589,7 @@
             "pt": "Resposta no prazo"
           },
           "value": 0.9956801123170798,
-          "previous": 0.985723311193909,
+          "previous": 0,
           "format": "percent",
           "improvement": "up"
         }
@@ -785,18 +785,18 @@
           "narratives": 160
         },
         {
-          "product": "Credit card",
-          "issue": "Problem with a company's investigation into an existing problem",
-          "complaints": 274,
-          "timely_pct": 100.0,
-          "narratives": 27
-        },
-        {
           "product": "Mortgage",
           "issue": "Trouble during payment process",
           "complaints": 274,
           "timely_pct": 99.3,
           "narratives": 184
+        },
+        {
+          "product": "Credit card",
+          "issue": "Problem with a company's investigation into an existing problem",
+          "complaints": 274,
+          "timely_pct": 100.0,
+          "narratives": 27
         },
         {
           "product": "Credit card",
@@ -841,18 +841,18 @@
           "narratives": 77
         },
         {
-          "product": "Credit card",
-          "issue": "Fees or interest",
-          "complaints": 161,
-          "timely_pct": 100.0,
-          "narratives": 100
-        },
-        {
           "product": "Checking or savings account",
           "issue": "Closing an account",
           "complaints": 161,
           "timely_pct": 99.4,
           "narratives": 97
+        },
+        {
+          "product": "Credit card",
+          "issue": "Fees or interest",
+          "complaints": 161,
+          "timely_pct": 100.0,
+          "narratives": 100
         },
         {
           "product": "Debt collection",
@@ -963,7 +963,7 @@
             "pt": "Resposta no prazo"
           },
           "value": 0.9956801123170798,
-          "previous": 0.985723311193909,
+          "previous": 0,
           "format": "percent",
           "improvement": "up"
         },
@@ -974,7 +974,7 @@
             "pt": "Respostas fora do prazo"
           },
           "value": 319.9999999999999,
-          "previous": 326.39999999999986,
+          "previous": 0,
           "format": "integer",
           "improvement": "down"
         },
@@ -985,7 +985,7 @@
             "pt": "Parcela com compensação"
           },
           "value": 0.4738511798693234,
-          "previous": 0.45015862087585723,
+          "previous": 0,
           "format": "percent",
           "improvement": "neutral"
         },
@@ -996,7 +996,7 @@
             "pt": "Empresas representadas"
           },
           "value": 904.0,
-          "previous": 904.0,
+          "previous": 0,
           "format": "integer",
           "improvement": "neutral"
         },
@@ -1007,7 +1007,7 @@
             "pt": "Resultados de resposta"
           },
           "value": 4.0,
-          "previous": 4.0,
+          "previous": 0,
           "format": "integer",
           "improvement": "neutral"
         }
@@ -1269,20 +1269,20 @@
           "narrative_count": 48
         },
         {
-          "company": "BANK OF AMERICA, NATIONAL ASSOCIATION",
-          "product": "Checking or savings account",
-          "complaints": 102,
-          "timely_pct": 100.0,
-          "relief_pct": 49.0,
-          "narrative_count": 60
-        },
-        {
           "company": "John C. Heath, Attorney at Law, PLLC",
           "product": "Debt or credit management",
           "complaints": 102,
           "timely_pct": 69.6,
           "relief_pct": 0.0,
           "narrative_count": 59
+        },
+        {
+          "company": "BANK OF AMERICA, NATIONAL ASSOCIATION",
+          "product": "Checking or savings account",
+          "complaints": 102,
+          "timely_pct": 100.0,
+          "relief_pct": 49.0,
+          "narrative_count": 60
         },
         {
           "company": "Resurgent Capital Services L.P.",
@@ -1356,7 +1356,7 @@
             "pt": "Relatos publicados"
           },
           "value": 20330.0,
-          "previous": 19923.4,
+          "previous": 0,
           "format": "integer",
           "improvement": "up"
         },
@@ -1367,7 +1367,7 @@
             "pt": "Cobertura de relatos"
           },
           "value": 0.27444786435552676,
-          "previous": 0.26895890706841624,
+          "previous": 0,
           "format": "percent",
           "improvement": "up"
         },
@@ -1378,7 +1378,7 @@
             "pt": "Tópicos explicáveis"
           },
           "value": 6.0,
-          "previous": 6.0,
+          "previous": 0,
           "format": "integer",
           "improvement": "neutral"
         },
@@ -1389,7 +1389,7 @@
             "pt": "Registros sem relato"
           },
           "value": 53746.0,
-          "previous": 54283.46,
+          "previous": 0,
           "format": "integer",
           "improvement": "down"
         }
@@ -1714,18 +1714,18 @@
             "pt": "Reclamações no recorte"
           },
           "value": 74076,
-          "previous": 36158.0,
+          "previous": 0,
           "format": "integer",
           "improvement": "neutral"
         },
         {
           "id": "states",
           "label": {
-            "en": "States represented",
-            "pt": "Estados representados"
+            "en": "Jurisdictions represented",
+            "pt": "Jurisdições representadas"
           },
           "value": 57.0,
-          "previous": 57.0,
+          "previous": 0,
           "format": "integer",
           "improvement": "neutral"
         },
@@ -1736,7 +1736,7 @@
             "pt": "Produtos"
           },
           "value": 11.0,
-          "previous": 11.0,
+          "previous": 0,
           "format": "integer",
           "improvement": "neutral"
         },
@@ -1747,14 +1747,14 @@
             "pt": "Empresas representadas"
           },
           "value": 904.0,
-          "previous": 904.0,
+          "previous": 0,
           "format": "integer",
           "improvement": "neutral"
         }
       ],
       "trendTitle": {
-        "en": "States active by day",
-        "pt": "Estados ativos por dia"
+        "en": "Jurisdictions active by day",
+        "pt": "Jurisdições ativas por dia"
       },
       "trend": [
         {
@@ -1794,8 +1794,8 @@
         }
       ],
       "breakdownTitle": {
-        "en": "State context",
-        "pt": "Contexto por estado"
+        "en": "Jurisdiction context",
+        "pt": "Contexto por jurisdição"
       },
       "breakdown": [
         {
@@ -1943,18 +1943,18 @@
           "narratives": 160
         },
         {
-          "product": "Credit card",
-          "issue": "Problem with a company's investigation into an existing problem",
-          "complaints": 274,
-          "timely_pct": 100.0,
-          "narratives": 27
-        },
-        {
           "product": "Mortgage",
           "issue": "Trouble during payment process",
           "complaints": 274,
           "timely_pct": 99.3,
           "narratives": 184
+        },
+        {
+          "product": "Credit card",
+          "issue": "Problem with a company's investigation into an existing problem",
+          "complaints": 274,
+          "timely_pct": 100.0,
+          "narratives": 27
         },
         {
           "product": "Credit card",
@@ -1999,18 +1999,18 @@
           "narratives": 77
         },
         {
-          "product": "Credit card",
-          "issue": "Fees or interest",
-          "complaints": 161,
-          "timely_pct": 100.0,
-          "narratives": 100
-        },
-        {
           "product": "Checking or savings account",
           "issue": "Closing an account",
           "complaints": 161,
           "timely_pct": 99.4,
           "narratives": 97
+        },
+        {
+          "product": "Credit card",
+          "issue": "Fees or interest",
+          "complaints": 161,
+          "timely_pct": 100.0,
+          "narratives": 100
         },
         {
           "product": "Debt collection",
@@ -2121,7 +2121,7 @@
             "pt": "Linhas modeladas"
           },
           "value": 74076,
-          "previous": 74076,
+          "previous": 0,
           "format": "integer",
           "improvement": "neutral"
         },
@@ -2143,7 +2143,7 @@
             "pt": "Empresas representadas"
           },
           "value": 904.0,
-          "previous": 904.0,
+          "previous": 0,
           "format": "integer",
           "improvement": "neutral"
         },
@@ -2154,7 +2154,7 @@
             "pt": "Dias cobertos"
           },
           "value": 7,
-          "previous": 7,
+          "previous": 0,
           "format": "integer",
           "improvement": "neutral"
         }
@@ -2330,18 +2330,18 @@
           "narratives": 160
         },
         {
-          "product": "Credit card",
-          "issue": "Problem with a company's investigation into an existing problem",
-          "complaints": 274,
-          "timely_pct": 100.0,
-          "narratives": 27
-        },
-        {
           "product": "Mortgage",
           "issue": "Trouble during payment process",
           "complaints": 274,
           "timely_pct": 99.3,
           "narratives": 184
+        },
+        {
+          "product": "Credit card",
+          "issue": "Problem with a company's investigation into an existing problem",
+          "complaints": 274,
+          "timely_pct": 100.0,
+          "narratives": 27
         },
         {
           "product": "Credit card",
@@ -2386,18 +2386,18 @@
           "narratives": 77
         },
         {
-          "product": "Credit card",
-          "issue": "Fees or interest",
-          "complaints": 161,
-          "timely_pct": 100.0,
-          "narratives": 100
-        },
-        {
           "product": "Checking or savings account",
           "issue": "Closing an account",
           "complaints": 161,
           "timely_pct": 99.4,
           "narratives": 97
+        },
+        {
+          "product": "Credit card",
+          "issue": "Fees or interest",
+          "complaints": 161,
+          "timely_pct": 100.0,
+          "narratives": 100
         },
         {
           "product": "Debt collection",

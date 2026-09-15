@@ -67,3 +67,12 @@ test('each page executes its own metric and trend contract', async ({ page }) =>
   expect(metricContracts.size).toBe(await pages.count())
   expect(trendContracts.size).toBe(await pages.count())
 })
+
+test('does not show static evidence when the complaint mart cannot load', async ({ page }) => {
+  test.setTimeout(120000)
+  await page.route('**/data/mart_complaints.parquet', route => route.abort())
+  await page.goto('/')
+  await expect(page.locator('.query-error')).toBeVisible({ timeout: 90000 })
+  await expect(page.locator('.metric-card')).toHaveCount(0)
+  await expect(page.locator('.evidence-lab')).toHaveCount(0)
+})
