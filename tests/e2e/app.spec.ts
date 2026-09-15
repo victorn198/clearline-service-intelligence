@@ -1,10 +1,10 @@
 import { expect, test } from '@playwright/test'
-test('renders, filters, switches language, and fits mobile', async ({ page }) => { test.setTimeout(120000); await page.setViewportSize({ width: 390, height: 844 }); await page.goto('/'); await expect(page.locator('.brand')).toContainText('Clearline'); await expect(page.locator('select').first()).toBeEnabled({ timeout: 90000 }); const before=await page.locator('.metric-card strong').first().innerText(); await page.locator('select').first().selectOption('1'); await expect.poll(() => page.locator('.metric-card strong').first().innerText(), { timeout: 90000 }).not.toBe(before); await page.getByRole('button', { name: 'PT' }).click(); await expect(page.getByText('Escopo das evidências')).toBeVisible(); expect(await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth)).toBe(true) })
+test('renders, filters, switches language, and fits mobile', async ({ page }) => { test.setTimeout(120000); await page.setViewportSize({ width: 390, height: 844 }); await page.goto('/'); await expect(page.locator('.brand')).toContainText('Clearline'); await expect(page.locator('.period-options').getByRole('button',{name:'1 day'})).toBeEnabled({ timeout: 90000 }); const before=await page.locator('.metric-card strong').first().innerText(); await page.locator('.period-options').getByRole('button',{name:'1 day'}).click(); await expect.poll(() => page.locator('.metric-card strong').first().innerText(), { timeout: 90000 }).not.toBe(before); await page.getByRole('button', { name: 'PT' }).click(); await expect(page.getByText('Escopo das evidências')).toBeVisible(); expect(await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth)).toBe(true) })
 
 test('shows full history without inventing a prior window', async ({ page }) => {
   test.setTimeout(120000)
   await page.goto('/')
-  await page.locator('select').first().selectOption('all')
+  await page.locator('.period-options').getByRole('button',{name:'History'}).click()
   await page.locator('.decision-strip:not(.is-loading)').waitFor({ timeout: 90000 })
   await expect(page.locator('.metric-card .delta.neutral').first()).toContainText('no prior window')
 })
@@ -31,7 +31,7 @@ test('every secondary page exposes five page-specific lenses', async ({ page }) 
   test.setTimeout(180000)
   await page.setViewportSize({ width: 390, height: 844 })
   await page.goto('/')
-  await page.locator('select').first().waitFor({ state: 'visible', timeout: 90000 })
+  await page.locator('.period-options').getByRole('button',{name:'3 days'}).waitFor({ state: 'visible', timeout: 90000 })
   const pages = page.locator('header nav button')
   for (let pageIndex = 1; pageIndex < await pages.count(); pageIndex += 1) {
     await pages.nth(pageIndex).click()
@@ -53,7 +53,7 @@ test('every secondary page exposes five page-specific lenses', async ({ page }) 
 test('each page executes its own metric and trend contract', async ({ page }) => {
   test.setTimeout(180000)
   await page.goto('/')
-  await page.locator('select').first().waitFor({ state: 'visible', timeout: 90000 })
+  await page.locator('.period-options').getByRole('button',{name:'3 days'}).waitFor({ state: 'visible', timeout: 90000 })
   const pages = page.locator('header nav button')
   const metricContracts = new Set<string>()
   const trendContracts = new Set<string>()
