@@ -27,7 +27,7 @@ The application supports issue triage, timely-response monitoring, product conte
 
 Every page uses five complementary lenses instead of repeating the KPI cards. The command page covers:
 
-- **Signal** flags days above a descriptive mean-plus-two-standard-deviations attention limit.
+- **Daily profile** shows the highest observed day, range, and descriptive mean without claiming statistical control from seven days.
 - **Drivers** attributes absolute volume changes versus the previous window to products.
 - **Timeliness** translates a high response rate into the remaining estimated exception volume.
 - **Concentration** reports Top 3 share and HHI without pretending complaint volume is a quality rate.
@@ -65,7 +65,7 @@ Validate with `python -m pipeline validate`, `pytest`, `npm test`, `npm run buil
 
 A production version would combine CRM tickets, contact-center events, account exposure, SLA policies, and quality-review outcomes. [Discuss a similar project](mailto:victorn198@outlook.com).
 
-See [Portuguese documentation](README.pt-BR.md), [analytical readout](docs/ANALYSIS_READOUT.md), [data audit](docs/DATA_AUDIT.md), [complete dashboard guide](docs/DASHBOARD_GUIDE.md), [metric catalog](docs/METRIC_CATALOG.md), and [demo guide](docs/DEMO_GUIDE.md).
+See [Portuguese documentation](README.pt-BR.md), [analytical readout](docs/ANALYSIS_READOUT.md), [data audit](docs/DATA_AUDIT.md), [dashboard quality review](docs/DASHBOARD_QUALITY_REVIEW.md), [complete dashboard guide](docs/DASHBOARD_GUIDE.md), [metric catalog](docs/METRIC_CATALOG.md), and [demo guide](docs/DEMO_GUIDE.md).
 ## Design innovation
 
-The **Signal Detection Control Chart** separates expected variation from days above a statistical attention limit. It supports triage without presenting complaint volume as causality, prevalence, or a company quality score.
+The **Daily Intake Profile** combines discrete daily volume, product drivers, exception burden, concentration, and a bounded SLA scenario. It supports triage without presenting seven days of complaint volume as statistical control, causality, prevalence, or a company quality score.

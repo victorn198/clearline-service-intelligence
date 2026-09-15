@@ -20,7 +20,7 @@ Reviewed 2026-09-14 using `analysis/audit_clearline.py`.
 ## Findings
 
 - **High:** Generated dashboard metadata contained synthetic prior values derived from arbitrary multipliers. Runtime comparisons must come only from non-overlapping date windows. The generator now reserves static values for labels and metadata.
-- **High:** Seven days are insufficient for robust anomaly detection, seasonality, or trend claims. The mean-plus-two-standard-deviations lens is descriptive triage only.
+- **High:** Seven days are insufficient for robust anomaly detection, seasonality, or trend claims. The dashboard therefore uses a descriptive daily profile instead of a control limit.
 - **Medium:** The company-product mart excludes groups below 25 complaints. This is appropriate for minimum-sample comparisons but loses 6.38% of complaints and 11.45% of narratives.
 - **Medium:** Narrative coverage is 27.44%, and topic assignment is deterministic keyword matching. Topic shares are sensitive to text availability and must not be interpreted as prevalence or truth.
 - **Low:** The source contains 57 non-null `State` codes; user-facing language should call these jurisdictions rather than assume 57 US states.

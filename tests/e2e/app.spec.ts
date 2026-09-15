@@ -12,7 +12,7 @@ test('shows full history without inventing a prior window', async ({ page }) => 
 test('evidence lab exposes five distinct decision lenses', async ({ page }) => {
   test.setTimeout(120000)
   await page.goto('/')
-  await expect(page.getByText('Is variation above an attention limit?')).toBeVisible({ timeout: 90000 })
+  await expect(page.getByText('How is intake distributed across the observed days?')).toBeVisible({ timeout: 90000 })
 
   await page.getByRole('tab', { name: 'Volume drivers' }).click()
   await expect(page.getByText('Which products moved intake?')).toBeVisible()

@@ -29,7 +29,7 @@ Rankear empresas por volume bruto de reclamações cria uma falsa nota de qualid
 
 Todas as páginas usam cinco lentes complementares, sem repetir os números dos cards. A página de comando cobre:
 
-- **Sinal** identifica dias acima de um limite descritivo de média mais dois desvios-padrão.
+- **Perfil diário** mostra maior dia observado, amplitude e média descritiva sem alegar controle estatístico com apenas sete dias.
 - **Drivers** atribui mudanças absolutas contra a janela anterior aos produtos.
 - **Prazo** traduz a taxa elevada no volume estimado de exceções remanescentes.
 - **Concentração** calcula participação do Top 3 e HHI sem tratar volume como nota de qualidade.
