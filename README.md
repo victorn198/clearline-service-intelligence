@@ -4,6 +4,13 @@ A financial-service operations case that turns official CFPB complaint data into
 
 **[Open the live demo](https://clearline-service-intelligence.pages.dev/)** · [Leia em português](README.pt-BR.md)
 
+## Documentation
+
+- [Analysis readout](docs/ANALYSIS_READOUT.md)
+- [Data audit](docs/DATA_AUDIT.md)
+- [Dashboard guide](docs/DASHBOARD_GUIDE.md)
+- [Quality review](docs/DASHBOARD_QUALITY_REVIEW.md)
+
 ![Clearline Service Command](docs/images/en/service-command.png)
 
 ## Business problem

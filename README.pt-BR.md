@@ -9,6 +9,7 @@
 - [Roteiro de demonstração](docs/DEMO_GUIDE.md)
 - [Leitura analítica em português](docs/ANALYSIS_READOUT.pt-BR.md)
 - [Auditoria dos dados](docs/DATA_AUDIT.md)
+- [Revisão de qualidade](docs/DASHBOARD_QUALITY_REVIEW.md)
 
 ![Comando de atendimento do Clearline](docs/images/pt/overview.png)
 
