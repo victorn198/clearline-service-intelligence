@@ -1,5 +1,5 @@
-import { useEffect, useState } from 'react'
-import { Activity, ChevronDown, ChevronRight, ChevronUp, CircleGauge, Download, ExternalLink, Languages, MapPinned, MessageSquareText, Radar, RotateCcw, Route, Search, ShieldCheck, TimerReset } from 'lucide-react'
+import { lazy, Suspense, useEffect, useState } from 'react'
+import { Activity, ChevronDown, ChevronRight, ChevronUp, CircleGauge, Download, ExternalLink, FlaskConical, Languages, MapPinned, MessageSquareText, Radar, RotateCcw, Route, Search, ShieldCheck, TimerReset } from 'lucide-react'
 import { BarChart, DataGrid, DecisionNote, MetricCard, TrendChart } from './components'
 import { ui } from './i18n'
 import { MartVerifier } from './MartVerifier'
@@ -7,10 +7,20 @@ import { queryMart, type DrillItem, type MartResult } from './queryMart'
 import { PageInsight } from './innovation'
 import type { DashboardData, Lang } from './types'
 
+const SemanticLab = lazy(() => import('./SemanticLab'))
+const langFromURL = (): Lang | null => {
+  const lang = new URLSearchParams(window.location.search).get('lang')
+  return lang === 'pt' || lang === 'en' ? lang : null
+}
+const pageFromURL = () => {
+  const view = new URLSearchParams(window.location.search).get('view')
+  return view && ['service','issues','response','narratives','context','trust','semantic'].includes(view) ? view : 'service'
+}
+
 export default function App() {
   const [data, setData] = useState<DashboardData | null>(null)
-  const [lang, setLang] = useState<Lang>(() => (localStorage.getItem('clearline-lang') as Lang) || 'en')
-  const [pageId, setPageId] = useState('service')
+  const [lang, setLang] = useState<Lang>(() => langFromURL() ?? (localStorage.getItem('clearline-lang') === 'pt' ? 'pt' : 'en'))
+  const [pageId, setPageId] = useState(pageFromURL)
   const [filters, setFilters] = useState({ channel: '', device: '', country: '', period:'3' as '1'|'3'|'all' })
   const [mart, setMart] = useState<MartResult | null>(null)
   const [queryState,setQueryState]=useState<'loading'|'ready'|'error'>('loading')
@@ -18,7 +28,8 @@ export default function App() {
   useEffect(() => { fetch('./data/dashboard.json').then(r => r.json()).then(setData) }, [])
   useEffect(() => { localStorage.setItem('clearline-lang', lang); document.documentElement.lang = lang === 'pt' ? 'pt-BR' : 'en' }, [lang])
   useEffect(() => { window.scrollTo({ top: 0, left: 0, behavior: 'auto' }) }, [pageId])
-  useEffect(()=>{let active=true;setMart(null);setQueryState('loading');queryMart(filters,pageId,drillPath).then(result=>{if(active){setMart(result);setQueryState('ready')}}).catch(error=>{console.error(error);if(active)setQueryState('error')});return()=>{active=false}},[filters.channel,filters.device,filters.country,filters.period,pageId,drillPath])
+  useEffect(() => { const onPopState=()=>{setPageId(pageFromURL());setDrillPath([]);const urlLang=langFromURL();if(urlLang)setLang(urlLang)};window.addEventListener('popstate',onPopState);return()=>window.removeEventListener('popstate',onPopState) }, [])
+  useEffect(()=>{if(pageId==='semantic')return;let active=true;setMart(null);setQueryState('loading');queryMart(filters,pageId,drillPath).then(result=>{if(active){setMart(result);setQueryState('ready')}}).catch(error=>{console.error(error);if(active)setQueryState('error')});return()=>{active=false}},[filters.channel,filters.device,filters.country,filters.period,pageId,drillPath])
   if (!data) return <main className="loading"><Activity className="spin" /> Loading Clearline...</main>
   const page = data.pages.find(p => p.id === pageId) ?? data.pages[0]
   const metrics = mart ? page.metrics.map(metric => ({...metric,value:mart.current[metric.id]??0,previous:mart.context.comparisonAvailable?(mart.previous[metric.id]??0):0})) : []
@@ -43,6 +54,7 @@ export default function App() {
   }
   const action=actionByPage[page.id]?.[lang]??page.action[lang]
   const t = ui[lang]
+  const changeLanguage=()=>{const next=lang==='en'?'pt':'en';const url=new URL(window.location.href);url.searchParams.set('lang',next);window.history.replaceState({},'',url);setLang(next)}
   const comparisonAvailable=mart?.context.comparisonAvailable??false
   const comparisonLabel=comparisonAvailable?(lang==='pt'?`vs. ${filters.period} dias anteriores`:`vs. previous ${filters.period} days`):(lang==='pt'?'sem janela anterior':'no prior window')
   const periodOptions = [
@@ -53,13 +65,14 @@ export default function App() {
   const trendDirection:Record<string,'up'|'down'|'neutral'>={service:'down',issues:'down',response:'up',narratives:'up',context:'neutral',trust:'up'}
   const breakdownDirection:Record<string,'up'|'down'|'neutral'>={service:'down',issues:'down',response:'neutral',narratives:'up',context:'neutral',trust:'neutral'}
   const select = (label: string, key: keyof typeof filters, values: string[]) => <label className="filter"><span>{label}</span><div><select disabled={queryState==='loading'} value={filters[key]} onChange={e => {setDrillPath([]);setFilters(v => ({ ...v, [key]: e.target.value }))}}><option value="">{t.all}</option>{values.map(v => <option key={v}>{v}</option>)}</select><ChevronDown size={15} /></div></label>
-  const changePage=(id:string)=>{setPageId(id);setDrillPath([])},drill=(name:string)=>{if(mart?.context.canDrill)setDrillPath(path=>[...path,{dimension:mart.context.dimension as DrillItem['dimension'],value:name}])}
+  const changePage=(id:string)=>{if(id!==pageId){const url=new URL(window.location.href);url.searchParams.set('view',id);window.history.pushState({},'',url)}setPageId(id);setDrillPath([])},drill=(name:string)=>{if(mart?.context.canDrill)setDrillPath(path=>[...path,{dimension:mart.context.dimension as DrillItem['dimension'],value:name}])}
   const pageIcons=[CircleGauge,Radar,TimerReset,MessageSquareText,MapPinned,ShieldCheck]
   const exportEvidence=()=>{const rows=detail.length?detail:[];if(!rows.length)return;const keys=Object.keys(rows[0]);const csv=[keys.join(','),...rows.map(row=>keys.map(key=>`"${String(row[key]??'').replaceAll('"','""')}"`).join(','))].join('\n');const url=URL.createObjectURL(new Blob([csv],{type:'text/csv;charset=utf-8'}));const link=document.createElement('a');link.href=url;link.download=`clearline-${page.id}.csv`;link.click();URL.revokeObjectURL(url)}
   return <div className="app-shell">
-    <header className="topbar"><a className="brand" href="#top"><span className="brand-mark"><Route /></span><span><b>Clearline</b><small>Evidence operations</small></span></a><label className="sidebar-search"><Search size={15}/><input aria-label={lang==='pt'?'Buscar painel':'Search dashboard'} placeholder={lang==='pt'?'Buscar painel...':'Search dashboard...'}/></label><nav>{data.pages.map((p,index) => {const Icon=pageIcons[index];return <button data-index={`0${index+1}`} className={p.id === page.id ? 'active' : ''} onClick={() => changePage(p.id)} key={p.id}><Icon size={17}/><span>{p.title[lang]}</span><ChevronRight size={14}/></button>})}</nav><div className="sidebar-foot"><span>{lang==='pt'?'Fonte pública verificável':'Verifiable public source'}</span><b>CFPB · CC0</b><a href="mailto:victorn198@outlook.com">{t.contact}<ExternalLink size={13}/></a></div></header>
+    <header className="topbar"><a className="brand" href="#top"><span className="brand-mark"><Route /></span><span><b>Clearline</b><small>Evidence operations</small></span></a><label className="sidebar-search"><Search size={15}/><input aria-label={lang==='pt'?'Buscar painel':'Search dashboard'} placeholder={lang==='pt'?'Buscar painel...':'Search dashboard...'}/></label><nav>{data.pages.map((p,index) => {const Icon=pageIcons[index];return <button data-index={`0${index+1}`} className={p.id === pageId ? 'active' : ''} onClick={() => changePage(p.id)} key={p.id}><Icon size={17}/><span>{p.title[lang]}</span><ChevronRight size={14}/></button>})}<button className={pageId==='semantic'?'active':''} onClick={()=>changePage('semantic')}><FlaskConical size={17}/><span>{lang==='pt'?'Laboratório Semântico':'Semantic Laboratory'}</span><ChevronRight size={14}/></button></nav><div className="sidebar-foot"><span>{lang==='pt'?'Fonte pública verificável':'Verifiable public source'}</span><b>CFPB · CC0</b><a href="mailto:victorn198@outlook.com">{t.contact}<ExternalLink size={13}/></a></div></header>
     <main id="top">
-      <section className="workspace-bar"><div className="breadcrumb"><span>Dashboard</span><ChevronRight size={15}/><b>{page.title[lang]}</b></div><div><button className="export-view" onClick={exportEvidence}><Download size={16}/>{lang==='pt'?'Exportar evidências':'Export evidence'}</button><button className="language" onClick={() => setLang(lang === 'en' ? 'pt' : 'en')}><Languages size={17} />{lang === 'en' ? 'PT' : 'EN'}</button></div></section>
+      <section className="workspace-bar"><div className="breadcrumb"><span>Dashboard</span><ChevronRight size={15}/><b>{pageId==='semantic'?(lang==='pt'?'Laboratório Semântico':'Semantic Laboratory'):page.title[lang]}</b></div><div>{pageId!=='semantic'&&<button className="export-view" onClick={exportEvidence}><Download size={16}/>{lang==='pt'?'Exportar evidências':'Export evidence'}</button>}<button className="language" onClick={changeLanguage}><Languages size={17} />{lang === 'en' ? 'PT' : 'EN'}</button></div></section>
+      {pageId==='semantic'?<Suspense fallback={<div className="loading">Loading…</div>}><SemanticLab lang={lang}/></Suspense>:<>
       <section className="report-summary"><div className="report-summary-head"><div><span>{page.eyebrow[lang]}</span><h1>{page.title[lang]}</h1><p>{page.question[lang]}</p></div><div className="report-meta"><span>{t.source}</span><b>{data.meta.source}</b><small>{data.meta.period}</small></div></div><section className="filterbar"><div className="filter-heading"><span>{t.filters}</span><small>{data.meta.rows.toLocaleString()} rows</small></div><div className="period-control"><span>{lang==='pt'?'Período':'Period'}</span><div className="period-options">{periodOptions.map(([value,label])=><button key={value} className={filters.period===value?'active':''} disabled={queryState==='loading'} onClick={()=>{setDrillPath([]);setFilters(v=>({...v,period:value}))}}>{label}</button>)}</div></div><div className="comparison-contract"><span>{lang==='pt'?'Comparar com':'Compare with'}</span><b>{filters.period==='all'?(lang==='pt'?'Sem baseline':'No baseline'):(lang==='pt'?'Período anterior equivalente':'Previous equivalent period')}</b></div>{select(t.channel, 'channel', data.filters.channels)}{select(t.device, 'device', data.filters.devices)}{select(t.country, 'country', data.filters.countries)}<button className="reset" onClick={() => {setDrillPath([]);setFilters({ channel: '', device: '', country: '',period:'3' })}}><RotateCcw size={15} />{t.reset}</button></section>{queryState==='ready'&&mart&&<p className="scope-caption"><b>{mart.context.currentStart} — {mart.context.currentEnd}</b> · {comparisonAvailable ? `${lang==='pt'?'comparado com':'compared with'} ${filters.period} ${lang==='pt'?'dias anteriores':'prior days'}` : (lang==='pt'?'histórico completo, sem baseline':'complete history, no baseline')}</p>}<section className="metrics">{metrics.map(metric => <MetricCard key={metric.id} metric={metric} lang={lang} prior={comparisonLabel} comparisonAvailable={comparisonAvailable} />)}</section></section>
       {queryState==='loading'&&<div className="loading" role="status">{lang==='pt'?'Calculando o recorte selecionado...':'Calculating selected scope...'}</div>}
       {queryState==='error'&&<div className="query-error" role="alert">{lang==='pt'?'Não foi possível recalcular o recorte.':'The selected scope could not be recalculated.'}</div>}
@@ -70,6 +83,7 @@ export default function App() {
       <PageInsight pageId={page.id} values={mart.current} previous={comparisonAvailable?mart.previous:mart.current} trend={trend} breakdown={breakdown} detail={detail} lang={lang}/>
       <section className="trust"><div><h2>{t.trust}</h2><p>{data.meta.limitations[lang]}</p>{page.id === 'trust' && <MartVerifier file="mart_response_performance.parquet" lang={lang}/>}</div><div><span>Built</span><b>{data.meta.builtAt}</b></div><div><span>Rows</span><b>{data.meta.rows.toLocaleString()}</b></div></section>
       </>}
+    </>}
     </main>
     <footer><span>Clearline · Portfolio case by Victor N.</span><a href="mailto:victorn198@outlook.com">{t.contact}<ExternalLink size={14} /></a></footer>
   </div>

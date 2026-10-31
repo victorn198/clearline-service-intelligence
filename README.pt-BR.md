@@ -40,6 +40,12 @@ Os laboratórios secundários são próprios para momento e triagem de temas, ex
 
 ## Execução
 
+### Clearline 2.0: laboratório semântico de relatos
+
+Abra **Laboratório Semântico** na navegação existente ou use `/?view=semantic&lang=pt` (`lang=en` para inglês). Compare as regras por palavras-chave com inferência real de similaridade semântica MiniLM q8 / WASM no navegador, revise 200 relatos públicos CFPB rastreáveis, aplique/desfaça correções na sessão da aba e exporte o recorte atual em CSV/JSON. Uma área isolada para colar texto em inglês usa o mesmo modelo local sem entrar nas contagens ou exportações CFPB. O download do modelo começa apenas com uma ação explícita de análise; o texto é processado localmente. Os painéis existentes funcionam sem o modelo.
+
+A revisão do modelo e o runtime Transformers.js 3.8.1 estão fixados. Similaridade não é probabilidade; resultados fracos ou próximos ficam incertos. A amostra inclui deliberadamente mais exceções de produto e prazo e não é representativa. Os indicadores operacionais usam resposta no prazo e compensação monetária, sem inventar duração de resolução ou valores de reembolso. Consulte o [método, procedência, avaliação e guia de QA do owner](docs/SEMANTIC_LAB.md).
+
 ```powershell
 python -m venv .venv
 .venv\Scripts\pip install -r requirements.txt

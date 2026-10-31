@@ -1,0 +1,17 @@
+{
+  "kind": "SYNTHETIC evaluation examples, authored for a smoke test; NOT CFPB records or a representative benchmark",
+  "cases": [
+    {"id":"synthetic-01","expected":"identity","narrative":"A stranger stole my social security number and opened a loan in my name. I never applied for it and never gave permission."},
+    {"id":"synthetic-02","expected":"identity","narrative":"Someone stole my bank card and used it to buy things. None of those purchases were approved by me."},
+    {"id":"synthetic-03","expected":"reporting","narrative":"The bureau lists my mortgage as delinquent even though it has always been paid on time. I want my credit file corrected."},
+    {"id":"synthetic-04","expected":"reporting","narrative":"My credit history contains an inaccurate balance. The credit bureau rejected my dispute without checking the evidence."},
+    {"id":"synthetic-05","expected":"payments","narrative":"I paid the full balance on time, but the bank added a late payment fee and additional interest. Please reverse the billing error."},
+    {"id":"synthetic-06","expected":"payments","narrative":"The bank took my monthly installment twice. I need the duplicate debit returned and the balance adjusted."},
+    {"id":"synthetic-07","expected":"collection","narrative":"A collection agency calls my employer every day demanding that I repay a debt. They refuse to send validation."},
+    {"id":"synthetic-08","expected":"collection","narrative":"The collector threatened to sue unless I paid immediately. I asked for proof of the debt and told them to stop calling."},
+    {"id":"synthetic-09","expected":"access","narrative":"My bank froze my savings account. I cannot withdraw my own money and every attempt to sign in fails."},
+    {"id":"synthetic-10","expected":"access","narrative":"I am locked out of online banking and unable to use my funds. The bank refuses to restore my access."},
+    {"id":"synthetic-11","expected":"other","narrative":"The support representative gives confusing instructions and nobody can explain the application process. I need clear information."},
+    {"id":"synthetic-12","expected":"other","narrative":"Customer service has not sent the documents I requested. Every agent transfers me to someone else without answering my question."}
+  ]
+}

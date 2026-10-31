@@ -44,6 +44,12 @@ The secondary labs are purpose-built for issue momentum and triage, response exc
 
 ## Architecture
 
+### Clearline 2.0: semantic narrative laboratory
+
+Open **Semantic Laboratory** in the existing navigation, or use `/?view=semantic&lang=en` (`lang=pt` for Portuguese). Compare the original keyword rules with real in-browser MiniLM q8 / WASM semantic-similarity inference, review 200 traceable public CFPB narratives, correct/undo categories within the tab session, and export the current filtered rows as CSV/JSON. An isolated English paste-text sandbox uses the same local model without entering CFPB counts or exports. Model downloads start only after an explicit analysis action; text is processed locally. The existing dashboards work without the model.
+
+The model revision and Transformers.js 3.8.1 runtime are pinned. Similarity is not probability; weak/close results remain uncertain. The sample deliberately enriches product and response exceptions and is not representative. Operational response analytics use timely-response and monetary-relief indicators, never actual resolution duration or refund amounts. See the [method, provenance, evaluation and owner QA guide](docs/SEMANTIC_LAB.md).
+
 `CFPB filtered CSV API → Python/DuckDB → dbt marts → explainable topic rules → Parquet/JSON → React + ECharts`
 
 ## Run locally

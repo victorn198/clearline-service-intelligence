@@ -32,7 +32,7 @@ test('every secondary page exposes five page-specific lenses', async ({ page }) 
   await page.setViewportSize({ width: 390, height: 844 })
   await page.goto('/')
   await page.locator('.period-options').getByRole('button',{name:'3 days'}).waitFor({ state: 'visible', timeout: 90000 })
-  const pages = page.locator('header nav button')
+  const pages = page.locator('header nav button[data-index]')
   for (let pageIndex = 1; pageIndex < await pages.count(); pageIndex += 1) {
     await pages.nth(pageIndex).click()
     const lab = page.locator('.evidence-lab')
@@ -54,7 +54,7 @@ test('each page executes its own metric and trend contract', async ({ page }) =>
   test.setTimeout(180000)
   await page.goto('/')
   await page.locator('.period-options').getByRole('button',{name:'3 days'}).waitFor({ state: 'visible', timeout: 90000 })
-  const pages = page.locator('header nav button')
+  const pages = page.locator('header nav button[data-index]')
   const metricContracts = new Set<string>()
   const trendContracts = new Set<string>()
   for (let pageIndex = 0; pageIndex < await pages.count(); pageIndex += 1) {
